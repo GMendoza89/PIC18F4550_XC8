@@ -10,9 +10,9 @@
 
 #include<xc.h>
 
-#define __XTAL_FREQ 20000000
-#define true 1
-#define false 0
+#define _XTAL_FREQ 20000000
+#define TRUE 1
+#define FALSE 0
 
 #endif	/* CONFIGURATIONBITS_H */
 

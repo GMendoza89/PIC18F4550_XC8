@@ -12,7 +12,7 @@
 void main(void) {
     // Setup code here
     
-    while(true){
+    while(TRUE){
         // Loop code here
         
         

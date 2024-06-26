@@ -7,13 +7,7 @@
 # 1 "/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "configurationBits.c" 2
-
-
-
-
-
-
-
+# 13 "configurationBits.c"
 # 1 "./ConfigurationBits.h" 1
 # 11 "./ConfigurationBits.h"
 # 1 "/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/xc.h" 1 3
@@ -5718,7 +5712,7 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/xc.h" 2 3
 # 12 "./ConfigurationBits.h" 2
-# 9 "configurationBits.c" 2
+# 14 "configurationBits.c" 2
 
 
 
