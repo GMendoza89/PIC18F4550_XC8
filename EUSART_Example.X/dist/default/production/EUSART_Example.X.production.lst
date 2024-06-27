@@ -1,0 +1,2031 @@
+
+
+Microchip MPLAB XC8 Assembler V2.32 build 20210201212658 
+                                                                                               Thu Jun 27 13:06:42 2024
+
+Microchip MPLAB XC8 C Compiler v2.32 (Free license) build 20210201212658 Og1 
+     1                           	processor	18F4550
+     2                           	fnconf	rparam,??,?,0
+     3                           	pagewidth 120
+     4                           	opt	flic
+     5                           	psect	smallconst,global,reloc=2,class=SMALLCONST,delta=1,noexec
+     6                           	psect	cinit,global,reloc=2,class=CODE,delta=1
+     7                           	psect	cstackCOMRAM,global,class=COMRAM,space=1,delta=1,lowdata,noexec
+     8                           	psect	text0,global,reloc=2,class=CODE,delta=1
+     9                           	psect	text1,global,reloc=2,class=CODE,delta=1
+    10                           	psect	text2,global,reloc=2,class=CODE,delta=1
+    11                           	psect	text3,global,reloc=2,class=CODE,delta=1
+    12                           	psect	text4,global,reloc=2,class=CODE,delta=1
+    13                           	psect	intsave_regs,global,class=BIGRAM,space=1,delta=1,noexec
+    14                           	psect	rparam,global,class=COMRAM,space=1,delta=1,noexec
+    15                           	psect	idloc,global,abs,ovrld,class=IDLOC,space=5,delta=1,noexec
+    16                           	psect	config,global,abs,ovrld,class=CONFIG,space=4,delta=1,noexec
+    17  0000                     
+    18                           ; Generated 23/03/2023 GMT
+    19                           ; 
+    20                           ; Copyright Â© 2023, Microchip Technology Inc. and its subsidiaries ("Microchip")
+    21                           ; All rights reserved.
+    22                           ; 
+    23                           ; This software is developed by Microchip Technology Inc. and its subsidiaries ("Microch
+      +                          ip").
+    24                           ; 
+    25                           ; Redistribution and use in source and binary forms, with or without modification, are
+    26                           ; permitted provided that the following conditions are met:
+    27                           ; 
+    28                           ;     1. Redistributions of source code must retain the above copyright notice, this lis
+      +                          t of
+    29                           ;        conditions and the following disclaimer.
+    30                           ; 
+    31                           ;     2. Redistributions in binary form must reproduce the above copyright notice, this 
+      +                          list
+    32                           ;        of conditions and the following disclaimer in the documentation and/or other
+    33                           ;        materials provided with the distribution. Publication is not required when
+    34                           ;        this file is used in an embedded application.
+    35                           ; 
+    36                           ;     3. Microchip's name may not be used to endorse or promote products derived from th
+      +                          is
+    37                           ;        software without specific prior written permission.
+    38                           ; 
+    39                           ; THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+    40                           ; INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS F
+      +                          OR
+    41                           ; PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIREC
+      +                          T,
+    42                           ; INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+    43                           ; PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+    44                           ; INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, ST
+      +                          RICT
+    45                           ; LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE U
+      +                          SE OF
+    46                           ; THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    47                           ; 
+    48                           ; 
+    49                           ; Code-generator required, PIC18F4550 Definitions
+    50                           ; 
+    51                           ; SFR Addresses
+    52  0000                     _RCREG	set	4014
+    53  0000                     _PIR1bits	set	3998
+    54  0000                     _TXREG	set	4013
+    55  0000                     _SPBRG	set	4015
+    56  0000                     _SPBRGH	set	4016
+    57  0000                     _BAUDCONbits	set	4024
+    58  0000                     _RCSTAbits	set	4011
+    59  0000                     _TXSTAbits	set	4012
+    60  0000                     _TRISCbits	set	3988
+    61  0000                     _PORTCbits	set	3970
+    62  0000                     _TRISD	set	3989
+    63  0000                     _LATD	set	3980
+    64  0000                     _PORTD	set	3971
+    65  0000                     _TRISC	set	3988
+    66  0000                     _LATC	set	3979
+    67  0000                     _PORTC	set	3970
+    68  0000                     _TRISB	set	3987
+    69  0000                     _LATB	set	3978
+    70  0000                     _PORTB	set	3969
+    71                           
+    72                           	psect	smallconst
+    73  000800                     __psmallconst:
+    74                           	callstack 0
+    75  000800  00                 	db	0
+    76  000801                     STR_2:
+    77  000801  69                 	db	105	;'i'
+    78  000802  6E                 	db	110	;'n'
+    79  000803  67                 	db	103	;'g'
+    80  000804  72                 	db	114	;'r'
+    81  000805  65                 	db	101	;'e'
+    82  000806  73                 	db	115	;'s'
+    83  000807  61                 	db	97	;'a'
+    84  000808  20                 	db	32
+    85  000809  75                 	db	117	;'u'
+    86  00080A  6E                 	db	110	;'n'
+    87  00080B  61                 	db	97	;'a'
+    88  00080C  20                 	db	32
+    89  00080D  6C                 	db	108	;'l'
+    90  00080E  65                 	db	101	;'e'
+    91  00080F  74                 	db	116	;'t'
+    92  000810  72                 	db	114	;'r'
+    93  000811  61                 	db	97	;'a'
+    94  000812  20                 	db	32
+    95  000813  70                 	db	112	;'p'
+    96  000814  61                 	db	97	;'a'
+    97  000815  72                 	db	114	;'r'
+    98  000816  61                 	db	97	;'a'
+    99  000817  20                 	db	32
+   100  000818  76                 	db	118	;'v'
+   101  000819  65                 	db	101	;'e'
+   102  00081A  72                 	db	114	;'r'
+   103  00081B  20                 	db	32
+   104  00081C  73                 	db	115	;'s'
+   105  00081D  75                 	db	117	;'u'
+   106  00081E  20                 	db	32
+   107  00081F  63                 	db	99	;'c'
+   108  000820  6F                 	db	111	;'o'
+   109  000821  6D                 	db	109	;'m'
+   110  000822  62                 	db	98	;'b'
+   111  000823  69                 	db	105	;'i'
+   112  000824  6E                 	db	110	;'n'
+   113  000825  61                 	db	97	;'a'
+   114  000826  63                 	db	99	;'c'
+   115  000827  69                 	db	105	;'i'
+   116  000828  F3                 	db	-13
+   117  000829  6E                 	db	110	;'n'
+   118  00082A  20                 	db	32
+   119  00082B  65                 	db	101	;'e'
+   120  00082C  6E                 	db	110	;'n'
+   121  00082D  20                 	db	32
+   122  00082E  41                 	db	65	;'A'
+   123  00082F  53                 	db	83	;'S'
+   124  000830  43                 	db	67	;'C'
+   125  000831  49                 	db	73	;'I'
+   126  000832  49                 	db	73	;'I'
+   127  000833  2E                 	db	46
+   128  000834  2E                 	db	46
+   129  000835  2E                 	db	46
+   130  000836  00                 	db	0
+   131  000837                     STR_1:
+   132  000837  49                 	db	73	;'I'
+   133  000838  6E                 	db	110	;'n'
+   134  000839  67                 	db	103	;'g'
+   135  00083A  2E                 	db	46
+   136  00083B  20                 	db	32
+   137  00083C  47                 	db	71	;'G'
+   138  00083D  75                 	db	117	;'u'
+   139  00083E  73                 	db	115	;'s'
+   140  00083F  74                 	db	116	;'t'
+   141  000840  61                 	db	97	;'a'
+   142  000841  76                 	db	118	;'v'
+   143  000842  6F                 	db	111	;'o'
+   144  000843  20                 	db	32
+   145  000844  44                 	db	68	;'D'
+   146  000845  61                 	db	97	;'a'
+   147  000846  76                 	db	118	;'v'
+   148  000847  69                 	db	105	;'i'
+   149  000848  64                 	db	100	;'d'
+   150  000849  20                 	db	32
+   151  00084A  4D                 	db	77	;'M'
+   152  00084B  65                 	db	101	;'e'
+   153  00084C  6E                 	db	110	;'n'
+   154  00084D  64                 	db	100	;'d'
+   155  00084E  6F                 	db	111	;'o'
+   156  00084F  7A                 	db	122	;'z'
+   157  000850  61                 	db	97	;'a'
+   158  000851  20                 	db	32
+   159  000852  50                 	db	80	;'P'
+   160  000853  69                 	db	105	;'i'
+   161  000854  6E                 	db	110	;'n'
+   162  000855  74                 	db	116	;'t'
+   163  000856  6F                 	db	111	;'o'
+   164  000857  20                 	db	32
+   165  000858  0A                 	db	10
+   166  000859  00                 	db	0
+   167  00085A                     STR_4:
+   168  00085A  25                 	db	37
+   169  00085B  64                 	db	100	;'d'
+   170  00085C  00                 	db	0
+   171  00085D                     STR_7:
+   172  00085D  25                 	db	37
+   173  00085E  66                 	db	102	;'f'
+   174  00085F  00                 	db	0
+   175  000860  00                 	db	0	; dummy byte at the end
+   176  0000                     
+   177                           ; #config settings
+   178                           
+   179                           	psect	cinit
+   180  000D20                     __pcinit:
+   181                           	callstack 0
+   182  000D20                     start_initialization:
+   183                           	callstack 0
+   184  000D20                     __initialization:
+   185                           	callstack 0
+   186  000D20                     end_of_initialization:
+   187                           	callstack 0
+   188  000D20                     __end_of__initialization:
+   189                           	callstack 0
+   190  000D20  0E00               	movlw	low (__Lmediumconst shr (0+16))
+   191  000D22  6EF8               	movwf	tblptru,c
+   192  000D24  0100               	movlb	0
+   193  000D26  EF01  F006         	goto	_main	;jump to C main() function
+   194                           
+   195                           	psect	cstackCOMRAM
+   196  000001                     __pcstackCOMRAM:
+   197                           	callstack 0
+   198  000001                     setupUART@BaudRate:
+   199                           	callstack 0
+   200  000001                     sendUART@data:
+   201                           	callstack 0
+   202  000001                     readUART@receiverData:
+   203                           	callstack 0
+   204                           
+   205                           ; 1 bytes @ 0x0
+   206  000001                     	ds	1
+   207  000002                     ??_setupUART:
+   208  000002                     printUART@string:
+   209                           	callstack 0
+   210                           
+   211                           ; 2 bytes @ 0x1
+   212  000002                     	ds	2
+   213  000004                     ??_printUART:
+   214  000004                     setupUART@freq:
+   215                           	callstack 0
+   216                           
+   217                           ; 1 bytes @ 0x3
+   218  000004                     	ds	2
+   219  000006                     printUART@index:
+   220                           	callstack 0
+   221                           
+   222                           ; 2 bytes @ 0x5
+   223  000006                     	ds	2
+   224  000008                     ??_main:
+   225                           
+   226                           ; 1 bytes @ 0x7
+   227  000008                     	ds	2
+   228  00000A                     main@message0:
+   229                           	callstack 0
+   230                           
+   231                           ; 2 bytes @ 0x9
+   232  00000A                     	ds	2
+   233  00000C                     main@message1:
+   234                           	callstack 0
+   235                           
+   236                           ; 2 bytes @ 0xB
+   237  00000C                     	ds	2
+   238  00000E                     main@dataOutput:
+   239                           	callstack 0
+   240                           
+   241                           ; 1 bytes @ 0xD
+   242  00000E                     	ds	1
+   243                           
+   244 ;;
+   245 ;;Main: autosize = 0, tempsize = 2, incstack = 0, save=0
+   246 ;;
+   247 ;; *************** function _main *****************
+   248 ;; Defined at:
+   249 ;;		line 18 in file "main.c"
+   250 ;; Parameters:    Size  Location     Type
+   251 ;;		None
+   252 ;; Auto vars:     Size  Location     Type
+   253 ;;  message1        2   11[COMRAM] PTR unsigned char 
+   254 ;;		 -> STR_2(54), 
+   255 ;;  message0        2    9[COMRAM] PTR unsigned char 
+   256 ;;		 -> STR_1(35), 
+   257 ;;  dataOutput      1   13[COMRAM] unsigned char 
+   258 ;;  dataInput       1    0        unsigned char 
+   259 ;; Return value:  Size  Location     Type
+   260 ;;                  1    wreg      void 
+   261 ;; Registers used:
+   262 ;;		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+   263 ;; Tracked objects:
+   264 ;;		On entry : 0/0
+   265 ;;		On exit  : 0/0
+   266 ;;		Unchanged: 0/0
+   267 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   268 ;;      Params:         0       0       0       0       0       0       0       0       0
+   269 ;;      Locals:         5       0       0       0       0       0       0       0       0
+   270 ;;      Temps:          2       0       0       0       0       0       0       0       0
+   271 ;;      Totals:         7       0       0       0       0       0       0       0       0
+   272 ;;Total ram usage:        7 bytes
+   273 ;; Hardware stack levels required when called: 2
+   274 ;; This function calls:
+   275 ;;		_printUART
+   276 ;;		_readUART
+   277 ;;		_sendUART
+   278 ;;		_setupUART
+   279 ;; This function is called by:
+   280 ;;		Startup code after reset
+   281 ;; This function uses a non-reentrant model
+   282 ;;
+   283                           
+   284                           	psect	text0
+   285  000C02                     __ptext0:
+   286                           	callstack 0
+   287  000C02                     _main:
+   288                           	callstack 29
+   289  000C02                     
+   290                           ;main.c: 22:     PORTB = 0x00;
+   291  000C02  0E00               	movlw	0
+   292  000C04  6E81               	movwf	129,c	;volatile
+   293                           
+   294                           ;main.c: 23:     LATB = 0x00;
+   295  000C06  0E00               	movlw	0
+   296  000C08  6E8A               	movwf	138,c	;volatile
+   297  000C0A                     
+   298                           ;main.c: 24:     TRISB = 0xFF;
+   299  000C0A  6893               	setf	147,c	;volatile
+   300                           
+   301                           ;main.c: 27:     PORTC = 0x00;
+   302  000C0C  0E00               	movlw	0
+   303  000C0E  6E82               	movwf	130,c	;volatile
+   304                           
+   305                           ;main.c: 28:     LATC = 0x00;
+   306  000C10  0E00               	movlw	0
+   307  000C12  6E8B               	movwf	139,c	;volatile
+   308  000C14                     
+   309                           ;main.c: 29:     TRISC |= 0x80;
+   310  000C14  8E94               	bsf	148,7,c	;volatile
+   311  000C16                     
+   312                           ;main.c: 32:     PORTD = 0x00;
+   313  000C16  0E00               	movlw	0
+   314  000C18  6E83               	movwf	131,c	;volatile
+   315  000C1A                     
+   316                           ;main.c: 33:     LATD = 0x00;
+   317  000C1A  0E00               	movlw	0
+   318  000C1C  6E8C               	movwf	140,c	;volatile
+   319  000C1E                     
+   320                           ;main.c: 34:     TRISD = 0x00;
+   321  000C1E  0E00               	movlw	0
+   322  000C20  6E95               	movwf	149,c	;volatile
+   323  000C22                     
+   324                           ;main.c: 38:     setupUART(2U, 1U);
+   325  000C22  0E01               	movlw	1
+   326  000C24  6E01               	movwf	setupUART@BaudRate^0,c
+   327  000C26  0E02               	movlw	2
+   328  000C28  EC31  F004         	call	_setupUART
+   329  000C2C                     
+   330                           ;main.c: 39:     unsigned char *message0 = "Ing. Gustavo David Mendoza Pinto \n";
+   331  000C2C  0E37               	movlw	low STR_1
+   332  000C2E  6E0A               	movwf	main@message0^0,c
+   333  000C30  0E08               	movlw	high STR_1
+   334  000C32  6E0B               	movwf	(main@message0+1)^0,c
+   335  000C34                     
+   336                           ;main.c: 40:     unsigned char *message1 = "ingresa una letra para ver su combinación en
+      +                           ASCII...";
+   337  000C34  0E01               	movlw	low STR_2
+   338  000C36  6E0C               	movwf	main@message1^0,c
+   339  000C38  0E08               	movlw	high STR_2
+   340  000C3A  6E0D               	movwf	(main@message1+1)^0,c
+   341  000C3C                     
+   342                           ;main.c: 41:     printUART(message0);
+   343  000C3C  C00A  F002         	movff	main@message0,printUART@string
+   344  000C40  C00B  F003         	movff	main@message0+1,printUART@string+1
+   345  000C44  EC48  F006         	call	_printUART	;wreg free
+   346  000C48                     
+   347                           ;main.c: 42:     printUART(message1);
+   348  000C48  C00C  F002         	movff	main@message1,printUART@string
+   349  000C4C  C00D  F003         	movff	main@message1+1,printUART@string+1
+   350  000C50  EC48  F006         	call	_printUART	;wreg free
+   351  000C54                     l1220:
+   352                           
+   353                           ;main.c: 49:         dataOutput = PORTB;
+   354  000C54  CF81 F00E          	movff	3969,main@dataOutput	;volatile
+   355  000C58                     
+   356                           ;main.c: 50:         if(!PORTCbits.RC7){
+   357  000C58  BE82               	btfsc	130,7,c	;volatile
+   358  000C5A  EF31  F006         	goto	u111
+   359  000C5E  EF33  F006         	goto	u110
+   360  000C62                     u111:
+   361  000C62  EF36  F006         	goto	l36
+   362  000C66                     u110:
+   363  000C66                     
+   364                           ;main.c: 51:             sendUART(dataOutput);
+   365  000C66  500E               	movf	main@dataOutput^0,w,c
+   366  000C68  EC73  F006         	call	_sendUART
+   367  000C6C                     l36:
+   368  000C6C  EC82  F006         	call	_readUART	;wreg free
+   369  000C70                     
+   370                           ;main.c: 55:         _delay((unsigned long)((500)*(20000000/4000.0)));
+   371  000C70  0E0D               	movlw	13
+   372  000C72  6E09               	movwf	(??_main+1)^0,c
+   373  000C74  0EAF               	movlw	175
+   374  000C76  6E08               	movwf	??_main^0,c
+   375  000C78  0EB6               	movlw	182
+   376  000C7A                     u127:
+   377  000C7A  2EE8               	decfsz	wreg,f,c
+   378  000C7C  D7FE               	bra	u127
+   379  000C7E  2E08               	decfsz	??_main^0,f,c
+   380  000C80  D7FC               	bra	u127
+   381  000C82  2E09               	decfsz	(??_main+1)^0,f,c
+   382  000C84  D7FA               	bra	u127
+   383  000C86  D000               	nop2	
+   384  000C88  EF2A  F006         	goto	l1220
+   385  000C8C  EF00  F000         	goto	start
+   386  000C90                     __end_of_main:
+   387                           	callstack 0
+   388                           
+   389 ;; *************** function _setupUART *****************
+   390 ;; Defined at:
+   391 ;;		line 13 in file "../Peripherals/EUSART/EUSART18f4550.c"
+   392 ;; Parameters:    Size  Location     Type
+   393 ;;  freq            1    wreg     unsigned char 
+   394 ;;  BaudRate        1    0[COMRAM] unsigned char 
+   395 ;; Auto vars:     Size  Location     Type
+   396 ;;  freq            1    3[COMRAM] unsigned char 
+   397 ;; Return value:  Size  Location     Type
+   398 ;;                  1    wreg      void 
+   399 ;; Registers used:
+   400 ;;		wreg, status,2, status,0
+   401 ;; Tracked objects:
+   402 ;;		On entry : 0/0
+   403 ;;		On exit  : 0/0
+   404 ;;		Unchanged: 0/0
+   405 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+   406 ;;      Params:         1       0       0       0       0       0       0       0       0
+   407 ;;      Locals:         1       0       0       0       0       0       0       0       0
+   408 ;;      Temps:          2       0       0       0       0       0       0       0       0
+   409 ;;      Totals:         4       0       0       0       0       0       0       0       0
+   410 ;;Total ram usage:        4 bytes
+   411 ;; Hardware stack levels used: 1
+   412 ;; This function calls:
+   413 ;;		Nothing
+   414 ;; This function is called by:
+   415 ;;		_main
+   416 ;; This function uses a non-reentrant model
+   417 ;;
+   418                           
+   419                           	psect	text1
+   420  000862                     __ptext1:
+   421                           	callstack 0
+   422  000862                     _setupUART:
+   423                           	callstack 30
+   424                           
+   425                           ;incstack = 0
+   426                           ;setupUART@freq stored from wreg
+   427  000862  6E04               	movwf	setupUART@freq^0,c
+   428  000864                     
+   429                           ;../Peripherals/EUSART/EUSART18f4550.c: 14:     TRISCbits.RC7 = 1;
+   430  000864  8E94               	bsf	148,7,c	;volatile
+   431                           
+   432                           ;../Peripherals/EUSART/EUSART18f4550.c: 15:     TRISCbits.RC6 = 0;
+   433  000866  9C94               	bcf	148,6,c	;volatile
+   434                           
+   435                           ;../Peripherals/EUSART/EUSART18f4550.c: 17:     TXSTAbits.TX9 = 0;
+   436  000868  9CAC               	bcf	172,6,c	;volatile
+   437                           
+   438                           ;../Peripherals/EUSART/EUSART18f4550.c: 18:     TXSTAbits.TXEN = 1;
+   439  00086A  8AAC               	bsf	172,5,c	;volatile
+   440                           
+   441                           ;../Peripherals/EUSART/EUSART18f4550.c: 19:     TXSTAbits.SENDB = 0;
+   442  00086C  96AC               	bcf	172,3,c	;volatile
+   443                           
+   444                           ;../Peripherals/EUSART/EUSART18f4550.c: 20:     TXSTAbits.TRMT = 1;
+   445  00086E  82AC               	bsf	172,1,c	;volatile
+   446                           
+   447                           ;../Peripherals/EUSART/EUSART18f4550.c: 23:     RCSTAbits.SPEN = 1;
+   448  000870  8EAB               	bsf	171,7,c	;volatile
+   449                           
+   450                           ;../Peripherals/EUSART/EUSART18f4550.c: 24:     RCSTAbits.RX9 = 0;
+   451  000872  9CAB               	bcf	171,6,c	;volatile
+   452                           
+   453                           ;../Peripherals/EUSART/EUSART18f4550.c: 25:     RCSTAbits.CREN = 1;
+   454  000874  88AB               	bsf	171,4,c	;volatile
+   455                           
+   456                           ;../Peripherals/EUSART/EUSART18f4550.c: 26:     RCSTAbits.ADDEN = 0;
+   457  000876  96AB               	bcf	171,3,c	;volatile
+   458                           
+   459                           ;../Peripherals/EUSART/EUSART18f4550.c: 27:     RCSTAbits.FERR = 0;
+   460  000878  94AB               	bcf	171,2,c	;volatile
+   461                           
+   462                           ;../Peripherals/EUSART/EUSART18f4550.c: 28:     RCSTAbits.OERR = 0;
+   463  00087A  92AB               	bcf	171,1,c	;volatile
+   464                           
+   465                           ;../Peripherals/EUSART/EUSART18f4550.c: 30:     switch(freq){
+   466  00087C  EFD1  F005         	goto	l1162
+   467  000880                     l65:
+   468                           
+   469                           ;../Peripherals/EUSART/EUSART18f4550.c: 35:                     TXSTAbits.SYNC=0;
+   470  000880  98AC               	bcf	172,4,c	;volatile
+   471                           
+   472                           ;../Peripherals/EUSART/EUSART18f4550.c: 36:                     TXSTAbits.BRGH = 0;
+   473  000882  94AC               	bcf	172,2,c	;volatile
+   474                           
+   475                           ;../Peripherals/EUSART/EUSART18f4550.c: 37:                     BAUDCONbits.ABDOVF = 0;
+   476  000884  9EB8               	bcf	184,7,c	;volatile
+   477                           
+   478                           ;../Peripherals/EUSART/EUSART18f4550.c: 38:                     BAUDCONbits.BRG16 = 0;
+   479  000886  96B8               	bcf	184,3,c	;volatile
+   480  000888                     l1080:
+   481                           
+   482                           ;../Peripherals/EUSART/EUSART18f4550.c: 39:                     SPBRGH = 0;
+   483  000888  0E00               	movlw	0
+   484  00088A  6EB0               	movwf	176,c	;volatile
+   485                           
+   486                           ;../Peripherals/EUSART/EUSART18f4550.c: 40:                     SPBRG = 25;
+   487  00088C  0E19               	movlw	25
+   488  00088E  6EAF               	movwf	175,c	;volatile
+   489                           
+   490                           ;../Peripherals/EUSART/EUSART18f4550.c: 41:                     break;
+   491  000890  EFEE  F005         	goto	l72
+   492  000894                     l67:
+   493                           
+   494                           ;../Peripherals/EUSART/EUSART18f4550.c: 44:                     TXSTAbits.SYNC=0;
+   495  000894  98AC               	bcf	172,4,c	;volatile
+   496                           
+   497                           ;../Peripherals/EUSART/EUSART18f4550.c: 45:                     TXSTAbits.BRGH = 1;
+   498  000896  84AC               	bsf	172,2,c	;volatile
+   499                           
+   500                           ;../Peripherals/EUSART/EUSART18f4550.c: 46:                     BAUDCONbits.ABDOVF = 0;
+   501  000898  9EB8               	bcf	184,7,c	;volatile
+   502                           
+   503                           ;../Peripherals/EUSART/EUSART18f4550.c: 47:                     BAUDCONbits.BRG16 = 0;
+   504  00089A  96B8               	bcf	184,3,c	;volatile
+   505  00089C  EF44  F004         	goto	l1080
+   506  0008A0                     l68:
+   507                           
+   508                           ;../Peripherals/EUSART/EUSART18f4550.c: 53:                     TXSTAbits.SYNC=0;
+   509  0008A0  98AC               	bcf	172,4,c	;volatile
+   510                           
+   511                           ;../Peripherals/EUSART/EUSART18f4550.c: 54:                     TXSTAbits.BRGH = 1;
+   512  0008A2  84AC               	bsf	172,2,c	;volatile
+   513                           
+   514                           ;../Peripherals/EUSART/EUSART18f4550.c: 55:                     BAUDCONbits.ABDOVF = 0;
+   515  0008A4  9EB8               	bcf	184,7,c	;volatile
+   516                           
+   517                           ;../Peripherals/EUSART/EUSART18f4550.c: 56:                     BAUDCONbits.BRG16 = 0;
+   518  0008A6  96B8               	bcf	184,3,c	;volatile
+   519  0008A8                     l1084:
+   520                           
+   521                           ;../Peripherals/EUSART/EUSART18f4550.c: 57:                     SPBRGH = 0;
+   522  0008A8  0E00               	movlw	0
+   523  0008AA  6EB0               	movwf	176,c	;volatile
+   524                           
+   525                           ;../Peripherals/EUSART/EUSART18f4550.c: 58:                     SPBRG = 12;
+   526  0008AC  0E0C               	movlw	12
+   527  0008AE  6EAF               	movwf	175,c	;volatile
+   528                           
+   529                           ;../Peripherals/EUSART/EUSART18f4550.c: 59:                     break;
+   530  0008B0  EFEE  F005         	goto	l72
+   531  0008B4                     l69:
+   532                           
+   533                           ;../Peripherals/EUSART/EUSART18f4550.c: 62:                     TXSTAbits.SYNC=0;
+   534  0008B4  98AC               	bcf	172,4,c	;volatile
+   535                           
+   536                           ;../Peripherals/EUSART/EUSART18f4550.c: 63:                     TXSTAbits.BRGH = 1;
+   537  0008B6  84AC               	bsf	172,2,c	;volatile
+   538                           
+   539                           ;../Peripherals/EUSART/EUSART18f4550.c: 64:                     BAUDCONbits.ABDOVF = 0;
+   540  0008B8  9EB8               	bcf	184,7,c	;volatile
+   541                           
+   542                           ;../Peripherals/EUSART/EUSART18f4550.c: 65:                     BAUDCONbits.BRG16 = 1;
+   543  0008BA  86B8               	bsf	184,3,c	;volatile
+   544  0008BC                     l1086:
+   545                           
+   546                           ;../Peripherals/EUSART/EUSART18f4550.c: 66:                     SPBRGH = 0;
+   547  0008BC  0E00               	movlw	0
+   548  0008BE  6EB0               	movwf	176,c	;volatile
+   549                           
+   550                           ;../Peripherals/EUSART/EUSART18f4550.c: 67:                     SPBRG = 16;
+   551  0008C0  0E10               	movlw	16
+   552  0008C2  6EAF               	movwf	175,c	;volatile
+   553                           
+   554                           ;../Peripherals/EUSART/EUSART18f4550.c: 68:                     break;
+   555  0008C4  EFEE  F005         	goto	l72
+   556  0008C8                     l70:
+   557                           
+   558                           ;../Peripherals/EUSART/EUSART18f4550.c: 71:                     TXSTAbits.SYNC=0;
+   559  0008C8  98AC               	bcf	172,4,c	;volatile
+   560                           
+   561                           ;../Peripherals/EUSART/EUSART18f4550.c: 72:                     TXSTAbits.BRGH = 1;
+   562  0008CA  84AC               	bsf	172,2,c	;volatile
+   563                           
+   564                           ;../Peripherals/EUSART/EUSART18f4550.c: 73:                     BAUDCONbits.ABDOVF = 0;
+   565  0008CC  9EB8               	bcf	184,7,c	;volatile
+   566                           
+   567                           ;../Peripherals/EUSART/EUSART18f4550.c: 74:                     BAUDCONbits.BRG16 = 1;
+   568  0008CE  86B8               	bsf	184,3,c	;volatile
+   569  0008D0                     l1088:
+   570                           
+   571                           ;../Peripherals/EUSART/EUSART18f4550.c: 75:                     SPBRGH = 0;
+   572  0008D0  0E00               	movlw	0
+   573  0008D2  6EB0               	movwf	176,c	;volatile
+   574                           
+   575                           ;../Peripherals/EUSART/EUSART18f4550.c: 76:                     SPBRG = 8;
+   576  0008D4  0E08               	movlw	8
+   577  0008D6  6EAF               	movwf	175,c	;volatile
+   578                           
+   579                           ;../Peripherals/EUSART/EUSART18f4550.c: 77:                     break;
+   580  0008D8  EFEE  F005         	goto	l72
+   581  0008DC                     l71:
+   582                           
+   583                           ;../Peripherals/EUSART/EUSART18f4550.c: 80:                     TXSTAbits.SYNC=0;
+   584  0008DC  98AC               	bcf	172,4,c	;volatile
+   585                           
+   586                           ;../Peripherals/EUSART/EUSART18f4550.c: 81:                     TXSTAbits.BRGH = 1;
+   587  0008DE  84AC               	bsf	172,2,c	;volatile
+   588                           
+   589                           ;../Peripherals/EUSART/EUSART18f4550.c: 82:                     BAUDCONbits.ABDOVF = 0;
+   590  0008E0  9EB8               	bcf	184,7,c	;volatile
+   591                           
+   592                           ;../Peripherals/EUSART/EUSART18f4550.c: 83:                     BAUDCONbits.BRG16 = 0;
+   593  0008E2  96B8               	bcf	184,3,c	;volatile
+   594  0008E4  EF44  F004         	goto	l1080
+   595  0008E8                     l1094:
+   596  0008E8  5001               	movf	setupUART@BaudRate^0,w,c
+   597  0008EA  6E02               	movwf	??_setupUART^0,c
+   598  0008EC  6A03               	clrf	(??_setupUART+1)^0,c
+   599                           
+   600                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+   601                           ; Switch size 1, requested type "simple"
+   602                           ; Number of cases is 1, Range of values is 0 to 0
+   603                           ; switch strategies available:
+   604                           ; Name         Instructions Cycles
+   605                           ; simple_byte            4     3 (average)
+   606                           ;	Chosen strategy is simple_byte
+   607  0008EE  5003               	movf	(??_setupUART+1)^0,w,c
+   608  0008F0  0A00               	xorlw	0	; case 0
+   609  0008F2  B4D8               	btfsc	status,2,c
+   610  0008F4  EF7E  F004         	goto	l1252
+   611  0008F8  EF6E  F004         	goto	l71
+   612  0008FC                     l1252:
+   613                           
+   614                           ; Switch size 1, requested type "simple"
+   615                           ; Number of cases is 5, Range of values is 0 to 4
+   616                           ; switch strategies available:
+   617                           ; Name         Instructions Cycles
+   618                           ; simple_byte           16     9 (average)
+   619                           ;	Chosen strategy is simple_byte
+   620  0008FC  5002               	movf	??_setupUART^0,w,c
+   621  0008FE  0A00               	xorlw	0	; case 0
+   622  000900  B4D8               	btfsc	status,2,c
+   623  000902  EF40  F004         	goto	l65
+   624  000906  0A01               	xorlw	1	; case 1
+   625  000908  B4D8               	btfsc	status,2,c
+   626  00090A  EF4A  F004         	goto	l67
+   627  00090E  0A03               	xorlw	3	; case 2
+   628  000910  B4D8               	btfsc	status,2,c
+   629  000912  EF50  F004         	goto	l68
+   630  000916  0A01               	xorlw	1	; case 3
+   631  000918  B4D8               	btfsc	status,2,c
+   632  00091A  EF5A  F004         	goto	l69
+   633  00091E  0A07               	xorlw	7	; case 4
+   634  000920  B4D8               	btfsc	status,2,c
+   635  000922  EF64  F004         	goto	l70
+   636  000926  EF6E  F004         	goto	l71
+   637  00092A                     l75:
+   638                           
+   639                           ;../Peripherals/EUSART/EUSART18f4550.c: 93:                     TXSTAbits.SYNC=0;
+   640  00092A  98AC               	bcf	172,4,c	;volatile
+   641                           
+   642                           ;../Peripherals/EUSART/EUSART18f4550.c: 94:                     TXSTAbits.BRGH = 1;
+   643  00092C  84AC               	bsf	172,2,c	;volatile
+   644                           
+   645                           ;../Peripherals/EUSART/EUSART18f4550.c: 95:                     BAUDCONbits.ABDOVF = 0;
+   646  00092E  9EB8               	bcf	184,7,c	;volatile
+   647                           
+   648                           ;../Peripherals/EUSART/EUSART18f4550.c: 96:                     BAUDCONbits.BRG16 = 1;
+   649  000930  86B8               	bsf	184,3,c	;volatile
+   650  000932                     
+   651                           ;../Peripherals/EUSART/EUSART18f4550.c: 97:                     SPBRGH = 0x03;
+   652  000932  0E03               	movlw	3
+   653  000934  6EB0               	movwf	176,c	;volatile
+   654                           
+   655                           ;../Peripherals/EUSART/EUSART18f4550.c: 98:                     SPBRG = 0x40;
+   656  000936  0E40               	movlw	64
+   657  000938  6EAF               	movwf	175,c	;volatile
+   658                           
+   659                           ;../Peripherals/EUSART/EUSART18f4550.c: 99:                     break;
+   660  00093A  EFEE  F005         	goto	l72
+   661  00093E                     l77:
+   662                           
+   663                           ;../Peripherals/EUSART/EUSART18f4550.c: 102:                     TXSTAbits.SYNC=0;
+   664  00093E  98AC               	bcf	172,4,c	;volatile
+   665                           
+   666                           ;../Peripherals/EUSART/EUSART18f4550.c: 103:                     TXSTAbits.BRGH = 1;
+   667  000940  84AC               	bsf	172,2,c	;volatile
+   668                           
+   669                           ;../Peripherals/EUSART/EUSART18f4550.c: 104:                     BAUDCONbits.ABDOVF = 0;
+   670  000942  9EB8               	bcf	184,7,c	;volatile
+   671                           
+   672                           ;../Peripherals/EUSART/EUSART18f4550.c: 105:                     BAUDCONbits.BRG16 = 0;
+   673  000944  96B8               	bcf	184,3,c	;volatile
+   674  000946                     l1098:
+   675                           
+   676                           ;../Peripherals/EUSART/EUSART18f4550.c: 106:                     SPBRGH = 0;
+   677  000946  0E00               	movlw	0
+   678  000948  6EB0               	movwf	176,c	;volatile
+   679                           
+   680                           ;../Peripherals/EUSART/EUSART18f4550.c: 107:                     SPBRG = 51;
+   681  00094A  0E33               	movlw	51
+   682  00094C  6EAF               	movwf	175,c	;volatile
+   683                           
+   684                           ;../Peripherals/EUSART/EUSART18f4550.c: 108:                     break;
+   685  00094E  EFEE  F005         	goto	l72
+   686  000952                     l78:
+   687                           
+   688                           ;../Peripherals/EUSART/EUSART18f4550.c: 111:                     TXSTAbits.SYNC=0;
+   689  000952  98AC               	bcf	172,4,c	;volatile
+   690                           
+   691                           ;../Peripherals/EUSART/EUSART18f4550.c: 112:                     TXSTAbits.BRGH = 1;
+   692  000954  84AC               	bsf	172,2,c	;volatile
+   693                           
+   694                           ;../Peripherals/EUSART/EUSART18f4550.c: 113:                     BAUDCONbits.ABDOVF = 0;
+   695  000956  9EB8               	bcf	184,7,c	;volatile
+   696                           
+   697                           ;../Peripherals/EUSART/EUSART18f4550.c: 114:                     BAUDCONbits.BRG16 = 0;
+   698  000958  96B8               	bcf	184,3,c	;volatile
+   699  00095A  EF44  F004         	goto	l1080
+   700  00095E                     l79:
+   701                           
+   702                           ;../Peripherals/EUSART/EUSART18f4550.c: 120:                     TXSTAbits.SYNC=0;
+   703  00095E  98AC               	bcf	172,4,c	;volatile
+   704                           
+   705                           ;../Peripherals/EUSART/EUSART18f4550.c: 121:                     TXSTAbits.BRGH = 1;
+   706  000960  84AC               	bsf	172,2,c	;volatile
+   707                           
+   708                           ;../Peripherals/EUSART/EUSART18f4550.c: 122:                     BAUDCONbits.ABDOVF = 0;
+   709  000962  9EB8               	bcf	184,7,c	;volatile
+   710                           
+   711                           ;../Peripherals/EUSART/EUSART18f4550.c: 123:                     BAUDCONbits.BRG16 = 1;
+   712  000964  86B8               	bsf	184,3,c	;volatile
+   713  000966                     l1102:
+   714                           
+   715                           ;../Peripherals/EUSART/EUSART18f4550.c: 124:                     SPBRGH = 0;
+   716  000966  0E00               	movlw	0
+   717  000968  6EB0               	movwf	176,c	;volatile
+   718                           
+   719                           ;../Peripherals/EUSART/EUSART18f4550.c: 125:                     SPBRG = 34;
+   720  00096A  0E22               	movlw	34
+   721  00096C  6EAF               	movwf	175,c	;volatile
+   722                           
+   723                           ;../Peripherals/EUSART/EUSART18f4550.c: 126:                     break;
+   724  00096E  EFEE  F005         	goto	l72
+   725  000972                     l80:
+   726                           
+   727                           ;../Peripherals/EUSART/EUSART18f4550.c: 129:                     TXSTAbits.SYNC=0;
+   728  000972  98AC               	bcf	172,4,c	;volatile
+   729                           
+   730                           ;../Peripherals/EUSART/EUSART18f4550.c: 130:                     TXSTAbits.BRGH = 1;
+   731  000974  84AC               	bsf	172,2,c	;volatile
+   732                           
+   733                           ;../Peripherals/EUSART/EUSART18f4550.c: 131:                     BAUDCONbits.ABDOVF = 0;
+   734  000976  9EB8               	bcf	184,7,c	;volatile
+   735                           
+   736                           ;../Peripherals/EUSART/EUSART18f4550.c: 132:                     BAUDCONbits.BRG16 = 1;
+   737  000978  86B8               	bsf	184,3,c	;volatile
+   738  00097A  EFB3  F004         	goto	l1102
+   739  00097E                     l81:
+   740                           
+   741                           ;../Peripherals/EUSART/EUSART18f4550.c: 138:                     TXSTAbits.SYNC=0;
+   742  00097E  98AC               	bcf	172,4,c	;volatile
+   743                           
+   744                           ;../Peripherals/EUSART/EUSART18f4550.c: 139:                     TXSTAbits.BRGH = 1;
+   745  000980  84AC               	bsf	172,2,c	;volatile
+   746                           
+   747                           ;../Peripherals/EUSART/EUSART18f4550.c: 140:                     BAUDCONbits.ABDOVF = 0;
+   748  000982  9EB8               	bcf	184,7,c	;volatile
+   749                           
+   750                           ;../Peripherals/EUSART/EUSART18f4550.c: 141:                     BAUDCONbits.BRG16 = 0;
+   751  000984  96B8               	bcf	184,3,c	;volatile
+   752  000986  EFA3  F004         	goto	l1098
+   753  00098A                     l1110:
+   754  00098A  5001               	movf	setupUART@BaudRate^0,w,c
+   755  00098C  6E02               	movwf	??_setupUART^0,c
+   756  00098E  6A03               	clrf	(??_setupUART+1)^0,c
+   757                           
+   758                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+   759                           ; Switch size 1, requested type "simple"
+   760                           ; Number of cases is 1, Range of values is 0 to 0
+   761                           ; switch strategies available:
+   762                           ; Name         Instructions Cycles
+   763                           ; simple_byte            4     3 (average)
+   764                           ;	Chosen strategy is simple_byte
+   765  000990  5003               	movf	(??_setupUART+1)^0,w,c
+   766  000992  0A00               	xorlw	0	; case 0
+   767  000994  B4D8               	btfsc	status,2,c
+   768  000996  EFCF  F004         	goto	l1254
+   769  00099A  EFBF  F004         	goto	l81
+   770  00099E                     l1254:
+   771                           
+   772                           ; Switch size 1, requested type "simple"
+   773                           ; Number of cases is 5, Range of values is 0 to 4
+   774                           ; switch strategies available:
+   775                           ; Name         Instructions Cycles
+   776                           ; simple_byte           16     9 (average)
+   777                           ;	Chosen strategy is simple_byte
+   778  00099E  5002               	movf	??_setupUART^0,w,c
+   779  0009A0  0A00               	xorlw	0	; case 0
+   780  0009A2  B4D8               	btfsc	status,2,c
+   781  0009A4  EF95  F004         	goto	l75
+   782  0009A8  0A01               	xorlw	1	; case 1
+   783  0009AA  B4D8               	btfsc	status,2,c
+   784  0009AC  EF9F  F004         	goto	l77
+   785  0009B0  0A03               	xorlw	3	; case 2
+   786  0009B2  B4D8               	btfsc	status,2,c
+   787  0009B4  EFA9  F004         	goto	l78
+   788  0009B8  0A01               	xorlw	1	; case 3
+   789  0009BA  B4D8               	btfsc	status,2,c
+   790  0009BC  EFAF  F004         	goto	l79
+   791  0009C0  0A07               	xorlw	7	; case 4
+   792  0009C2  B4D8               	btfsc	status,2,c
+   793  0009C4  EFB9  F004         	goto	l80
+   794  0009C8  EFBF  F004         	goto	l81
+   795  0009CC                     l84:
+   796                           
+   797                           ;../Peripherals/EUSART/EUSART18f4550.c: 151:                     TXSTAbits.SYNC=0;
+   798  0009CC  98AC               	bcf	172,4,c	;volatile
+   799                           
+   800                           ;../Peripherals/EUSART/EUSART18f4550.c: 152:                     TXSTAbits.BRGH = 0;
+   801  0009CE  94AC               	bcf	172,2,c	;volatile
+   802                           
+   803                           ;../Peripherals/EUSART/EUSART18f4550.c: 153:                     BAUDCONbits.ABDOVF = 0;
+   804  0009D0  9EB8               	bcf	184,7,c	;volatile
+   805                           
+   806                           ;../Peripherals/EUSART/EUSART18f4550.c: 154:                     BAUDCONbits.BRG16 = 1;
+   807  0009D2  86B8               	bsf	184,3,c	;volatile
+   808  0009D4                     
+   809                           ;../Peripherals/EUSART/EUSART18f4550.c: 155:                     SPBRGH = 0x01;
+   810  0009D4  0E01               	movlw	1
+   811  0009D6  6EB0               	movwf	176,c	;volatile
+   812                           
+   813                           ;../Peripherals/EUSART/EUSART18f4550.c: 156:                     SPBRG = 0x03;
+   814  0009D8  0E03               	movlw	3
+   815  0009DA  6EAF               	movwf	175,c	;volatile
+   816                           
+   817                           ;../Peripherals/EUSART/EUSART18f4550.c: 157:                     break;
+   818  0009DC  EFEE  F005         	goto	l72
+   819  0009E0                     l86:
+   820                           
+   821                           ;../Peripherals/EUSART/EUSART18f4550.c: 160:                     TXSTAbits.SYNC=0;
+   822  0009E0  98AC               	bcf	172,4,c	;volatile
+   823                           
+   824                           ;../Peripherals/EUSART/EUSART18f4550.c: 161:                     TXSTAbits.BRGH = 1;
+   825  0009E2  84AC               	bsf	172,2,c	;volatile
+   826                           
+   827                           ;../Peripherals/EUSART/EUSART18f4550.c: 162:                     BAUDCONbits.ABDOVF = 0;
+   828  0009E4  9EB8               	bcf	184,7,c	;volatile
+   829                           
+   830                           ;../Peripherals/EUSART/EUSART18f4550.c: 163:                     BAUDCONbits.BRG16 = 1;
+   831  0009E6  86B8               	bsf	184,3,c	;volatile
+   832  0009E8                     l1114:
+   833                           
+   834                           ;../Peripherals/EUSART/EUSART18f4550.c: 164:                     SPBRGH = 0x02;
+   835  0009E8  0E02               	movlw	2
+   836  0009EA  6EB0               	movwf	176,c	;volatile
+   837                           
+   838                           ;../Peripherals/EUSART/EUSART18f4550.c: 165:                     SPBRG = 0x08;
+   839  0009EC  0E08               	movlw	8
+   840  0009EE  6EAF               	movwf	175,c	;volatile
+   841                           
+   842                           ;../Peripherals/EUSART/EUSART18f4550.c: 166:                     break;
+   843  0009F0  EFEE  F005         	goto	l72
+   844  0009F4                     l87:
+   845                           
+   846                           ;../Peripherals/EUSART/EUSART18f4550.c: 169:                     TXSTAbits.SYNC=0;
+   847  0009F4  98AC               	bcf	172,4,c	;volatile
+   848                           
+   849                           ;../Peripherals/EUSART/EUSART18f4550.c: 170:                     TXSTAbits.BRGH = 1;
+   850  0009F6  84AC               	bsf	172,2,c	;volatile
+   851                           
+   852                           ;../Peripherals/EUSART/EUSART18f4550.c: 171:                     BAUDCONbits.ABDOVF = 0;
+   853  0009F8  9EB8               	bcf	184,7,c	;volatile
+   854                           
+   855                           ;../Peripherals/EUSART/EUSART18f4550.c: 172:                     BAUDCONbits.BRG16 = 0;
+   856  0009FA  96B8               	bcf	184,3,c	;volatile
+   857  0009FC                     
+   858                           ;../Peripherals/EUSART/EUSART18f4550.c: 173:                     SPBRGH = 0;
+   859  0009FC  0E00               	movlw	0
+   860  0009FE  6EB0               	movwf	176,c	;volatile
+   861                           
+   862                           ;../Peripherals/EUSART/EUSART18f4550.c: 174:                     SPBRG = 64;
+   863  000A00  0E40               	movlw	64
+   864  000A02  6EAF               	movwf	175,c	;volatile
+   865                           
+   866                           ;../Peripherals/EUSART/EUSART18f4550.c: 175:                     break;
+   867  000A04  EFEE  F005         	goto	l72
+   868  000A08                     l88:
+   869                           
+   870                           ;../Peripherals/EUSART/EUSART18f4550.c: 178:                     TXSTAbits.SYNC=0;
+   871  000A08  98AC               	bcf	172,4,c	;volatile
+   872                           
+   873                           ;../Peripherals/EUSART/EUSART18f4550.c: 179:                     TXSTAbits.BRGH = 1;
+   874  000A0A  84AC               	bsf	172,2,c	;volatile
+   875                           
+   876                           ;../Peripherals/EUSART/EUSART18f4550.c: 180:                     BAUDCONbits.ABDOVF = 0;
+   877  000A0C  9EB8               	bcf	184,7,c	;volatile
+   878                           
+   879                           ;../Peripherals/EUSART/EUSART18f4550.c: 181:                     BAUDCONbits.BRG16 = 1;
+   880  000A0E  86B8               	bsf	184,3,c	;volatile
+   881  000A10                     l1118:
+   882                           
+   883                           ;../Peripherals/EUSART/EUSART18f4550.c: 182:                     SPBRGH = 0;
+   884  000A10  0E00               	movlw	0
+   885  000A12  6EB0               	movwf	176,c	;volatile
+   886                           
+   887                           ;../Peripherals/EUSART/EUSART18f4550.c: 183:                     SPBRG = 86;
+   888  000A14  0E56               	movlw	86
+   889  000A16  6EAF               	movwf	175,c	;volatile
+   890                           
+   891                           ;../Peripherals/EUSART/EUSART18f4550.c: 184:                     break;
+   892  000A18  EFEE  F005         	goto	l72
+   893  000A1C                     l89:
+   894                           
+   895                           ;../Peripherals/EUSART/EUSART18f4550.c: 187:                     TXSTAbits.SYNC=0;
+   896  000A1C  98AC               	bcf	172,4,c	;volatile
+   897                           
+   898                           ;../Peripherals/EUSART/EUSART18f4550.c: 188:                     TXSTAbits.BRGH = 1;
+   899  000A1E  84AC               	bsf	172,2,c	;volatile
+   900                           
+   901                           ;../Peripherals/EUSART/EUSART18f4550.c: 189:                     BAUDCONbits.ABDOVF = 0;
+   902  000A20  9EB8               	bcf	184,7,c	;volatile
+   903                           
+   904                           ;../Peripherals/EUSART/EUSART18f4550.c: 190:                     BAUDCONbits.BRG16 = 1;
+   905  000A22  86B8               	bsf	184,3,c	;volatile
+   906  000A24                     l1120:
+   907                           
+   908                           ;../Peripherals/EUSART/EUSART18f4550.c: 191:                     SPBRGH = 0;
+   909  000A24  0E00               	movlw	0
+   910  000A26  6EB0               	movwf	176,c	;volatile
+   911                           
+   912                           ;../Peripherals/EUSART/EUSART18f4550.c: 192:                     SPBRG = 42;
+   913  000A28  0E2A               	movlw	42
+   914  000A2A  6EAF               	movwf	175,c	;volatile
+   915                           
+   916                           ;../Peripherals/EUSART/EUSART18f4550.c: 193:                     break;
+   917  000A2C  EFEE  F005         	goto	l72
+   918  000A30                     l90:
+   919                           
+   920                           ;../Peripherals/EUSART/EUSART18f4550.c: 196:                     TXSTAbits.SYNC=0;
+   921  000A30  98AC               	bcf	172,4,c	;volatile
+   922                           
+   923                           ;../Peripherals/EUSART/EUSART18f4550.c: 197:                     TXSTAbits.BRGH = 1;
+   924  000A32  84AC               	bsf	172,2,c	;volatile
+   925                           
+   926                           ;../Peripherals/EUSART/EUSART18f4550.c: 198:                     BAUDCONbits.ABDOVF = 0;
+   927  000A34  9EB8               	bcf	184,7,c	;volatile
+   928                           
+   929                           ;../Peripherals/EUSART/EUSART18f4550.c: 199:                     BAUDCONbits.BRG16 = 0;
+   930  000A36  96B8               	bcf	184,3,c	;volatile
+   931  000A38  EFA3  F004         	goto	l1098
+   932  000A3C                     l1126:
+   933  000A3C  5001               	movf	setupUART@BaudRate^0,w,c
+   934  000A3E  6E02               	movwf	??_setupUART^0,c
+   935  000A40  6A03               	clrf	(??_setupUART+1)^0,c
+   936                           
+   937                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+   938                           ; Switch size 1, requested type "simple"
+   939                           ; Number of cases is 1, Range of values is 0 to 0
+   940                           ; switch strategies available:
+   941                           ; Name         Instructions Cycles
+   942                           ; simple_byte            4     3 (average)
+   943                           ;	Chosen strategy is simple_byte
+   944  000A42  5003               	movf	(??_setupUART+1)^0,w,c
+   945  000A44  0A00               	xorlw	0	; case 0
+   946  000A46  B4D8               	btfsc	status,2,c
+   947  000A48  EF28  F005         	goto	l1256
+   948  000A4C  EF18  F005         	goto	l90
+   949  000A50                     l1256:
+   950                           
+   951                           ; Switch size 1, requested type "simple"
+   952                           ; Number of cases is 5, Range of values is 0 to 4
+   953                           ; switch strategies available:
+   954                           ; Name         Instructions Cycles
+   955                           ; simple_byte           16     9 (average)
+   956                           ;	Chosen strategy is simple_byte
+   957  000A50  5002               	movf	??_setupUART^0,w,c
+   958  000A52  0A00               	xorlw	0	; case 0
+   959  000A54  B4D8               	btfsc	status,2,c
+   960  000A56  EFE6  F004         	goto	l84
+   961  000A5A  0A01               	xorlw	1	; case 1
+   962  000A5C  B4D8               	btfsc	status,2,c
+   963  000A5E  EFF0  F004         	goto	l86
+   964  000A62  0A03               	xorlw	3	; case 2
+   965  000A64  B4D8               	btfsc	status,2,c
+   966  000A66  EFFA  F004         	goto	l87
+   967  000A6A  0A01               	xorlw	1	; case 3
+   968  000A6C  B4D8               	btfsc	status,2,c
+   969  000A6E  EF04  F005         	goto	l88
+   970  000A72  0A07               	xorlw	7	; case 4
+   971  000A74  B4D8               	btfsc	status,2,c
+   972  000A76  EF0E  F005         	goto	l89
+   973  000A7A  EF18  F005         	goto	l90
+   974  000A7E                     l93:
+   975                           
+   976                           ;../Peripherals/EUSART/EUSART18f4550.c: 209:                     TXSTAbits.SYNC=0;
+   977  000A7E  98AC               	bcf	172,4,c	;volatile
+   978                           
+   979                           ;../Peripherals/EUSART/EUSART18f4550.c: 210:                     TXSTAbits.BRGH = 0;
+   980  000A80  94AC               	bcf	172,2,c	;volatile
+   981                           
+   982                           ;../Peripherals/EUSART/EUSART18f4550.c: 211:                     BAUDCONbits.ABDOVF = 0;
+   983  000A82  9EB8               	bcf	184,7,c	;volatile
+   984                           
+   985                           ;../Peripherals/EUSART/EUSART18f4550.c: 212:                     BAUDCONbits.BRG16 = 1;
+   986  000A84  86B8               	bsf	184,3,c	;volatile
+   987  000A86                     l1128:
+   988                           
+   989                           ;../Peripherals/EUSART/EUSART18f4550.c: 213:                     SPBRGH = 0x04;
+   990  000A86  0E04               	movlw	4
+   991  000A88  6EB0               	movwf	176,c	;volatile
+   992                           
+   993                           ;../Peripherals/EUSART/EUSART18f4550.c: 214:                     SPBRG = 0x10;
+   994  000A8A  0E10               	movlw	16
+   995  000A8C  6EAF               	movwf	175,c	;volatile
+   996                           
+   997                           ;../Peripherals/EUSART/EUSART18f4550.c: 215:                     break;
+   998  000A8E  EFEE  F005         	goto	l72
+   999  000A92                     l95:
+  1000                           
+  1001                           ;../Peripherals/EUSART/EUSART18f4550.c: 218:                     TXSTAbits.SYNC=0;
+  1002  000A92  98AC               	bcf	172,4,c	;volatile
+  1003                           
+  1004                           ;../Peripherals/EUSART/EUSART18f4550.c: 219:                     TXSTAbits.BRGH = 1;
+  1005  000A94  84AC               	bsf	172,2,c	;volatile
+  1006                           
+  1007                           ;../Peripherals/EUSART/EUSART18f4550.c: 220:                     BAUDCONbits.ABDOVF = 0;
+  1008  000A96  9EB8               	bcf	184,7,c	;volatile
+  1009                           
+  1010                           ;../Peripherals/EUSART/EUSART18f4550.c: 221:                     BAUDCONbits.BRG16 = 1;
+  1011  000A98  86B8               	bsf	184,3,c	;volatile
+  1012  000A9A  EF43  F005         	goto	l1128
+  1013  000A9E                     l96:
+  1014                           
+  1015                           ;../Peripherals/EUSART/EUSART18f4550.c: 227:                     TXSTAbits.SYNC=0;
+  1016  000A9E  98AC               	bcf	172,4,c	;volatile
+  1017                           
+  1018                           ;../Peripherals/EUSART/EUSART18f4550.c: 228:                     TXSTAbits.BRGH = 1;
+  1019  000AA0  84AC               	bsf	172,2,c	;volatile
+  1020                           
+  1021                           ;../Peripherals/EUSART/EUSART18f4550.c: 229:                     BAUDCONbits.ABDOVF = 0;
+  1022  000AA2  9EB8               	bcf	184,7,c	;volatile
+  1023                           
+  1024                           ;../Peripherals/EUSART/EUSART18f4550.c: 230:                     BAUDCONbits.BRG16 = 1;
+  1025  000AA4  86B8               	bsf	184,3,c	;volatile
+  1026  000AA6  EFF4  F004         	goto	l1114
+  1027  000AAA                     l97:
+  1028                           
+  1029                           ;../Peripherals/EUSART/EUSART18f4550.c: 236:                     TXSTAbits.SYNC=0;
+  1030  000AAA  98AC               	bcf	172,4,c	;volatile
+  1031                           
+  1032                           ;../Peripherals/EUSART/EUSART18f4550.c: 237:                     TXSTAbits.BRGH = 1;
+  1033  000AAC  84AC               	bsf	172,2,c	;volatile
+  1034                           
+  1035                           ;../Peripherals/EUSART/EUSART18f4550.c: 238:                     BAUDCONbits.ABDOVF = 0;
+  1036  000AAE  9EB8               	bcf	184,7,c	;volatile
+  1037                           
+  1038                           ;../Peripherals/EUSART/EUSART18f4550.c: 239:                     BAUDCONbits.BRG16 = 1;
+  1039  000AB0  86B8               	bsf	184,3,c	;volatile
+  1040  000AB2                     
+  1041                           ;../Peripherals/EUSART/EUSART18f4550.c: 240:                     SPBRGH = 0;
+  1042  000AB2  0E00               	movlw	0
+  1043  000AB4  6EB0               	movwf	176,c	;volatile
+  1044                           
+  1045                           ;../Peripherals/EUSART/EUSART18f4550.c: 241:                     SPBRG = 172;
+  1046  000AB6  0EAC               	movlw	172
+  1047  000AB8  6EAF               	movwf	175,c	;volatile
+  1048                           
+  1049                           ;../Peripherals/EUSART/EUSART18f4550.c: 242:                     break;
+  1050  000ABA  EFEE  F005         	goto	l72
+  1051  000ABE                     l98:
+  1052                           
+  1053                           ;../Peripherals/EUSART/EUSART18f4550.c: 245:                     TXSTAbits.SYNC=0;
+  1054  000ABE  98AC               	bcf	172,4,c	;volatile
+  1055                           
+  1056                           ;../Peripherals/EUSART/EUSART18f4550.c: 246:                     TXSTAbits.BRGH = 1;
+  1057  000AC0  84AC               	bsf	172,2,c	;volatile
+  1058                           
+  1059                           ;../Peripherals/EUSART/EUSART18f4550.c: 247:                     BAUDCONbits.ABDOVF = 0;
+  1060  000AC2  9EB8               	bcf	184,7,c	;volatile
+  1061                           
+  1062                           ;../Peripherals/EUSART/EUSART18f4550.c: 248:                     BAUDCONbits.BRG16 = 1;
+  1063  000AC4  86B8               	bsf	184,3,c	;volatile
+  1064  000AC6  EF12  F005         	goto	l1120
+  1065  000ACA                     l99:
+  1066                           
+  1067                           ;../Peripherals/EUSART/EUSART18f4550.c: 254:                     TXSTAbits.SYNC=0;
+  1068  000ACA  98AC               	bcf	172,4,c	;volatile
+  1069                           
+  1070                           ;../Peripherals/EUSART/EUSART18f4550.c: 255:                     TXSTAbits.BRGH = 1;
+  1071  000ACC  84AC               	bsf	172,2,c	;volatile
+  1072                           
+  1073                           ;../Peripherals/EUSART/EUSART18f4550.c: 256:                     BAUDCONbits.ABDOVF = 0;
+  1074  000ACE  9EB8               	bcf	184,7,c	;volatile
+  1075                           
+  1076                           ;../Peripherals/EUSART/EUSART18f4550.c: 257:                     BAUDCONbits.BRG16 = 1;
+  1077  000AD0  86B8               	bsf	184,3,c	;volatile
+  1078  000AD2  EF08  F005         	goto	l1118
+  1079  000AD6                     l1142:
+  1080  000AD6  5001               	movf	setupUART@BaudRate^0,w,c
+  1081  000AD8  6E02               	movwf	??_setupUART^0,c
+  1082  000ADA  6A03               	clrf	(??_setupUART+1)^0,c
+  1083                           
+  1084                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+  1085                           ; Switch size 1, requested type "simple"
+  1086                           ; Number of cases is 1, Range of values is 0 to 0
+  1087                           ; switch strategies available:
+  1088                           ; Name         Instructions Cycles
+  1089                           ; simple_byte            4     3 (average)
+  1090                           ;	Chosen strategy is simple_byte
+  1091  000ADC  5003               	movf	(??_setupUART+1)^0,w,c
+  1092  000ADE  0A00               	xorlw	0	; case 0
+  1093  000AE0  B4D8               	btfsc	status,2,c
+  1094  000AE2  EF75  F005         	goto	l1258
+  1095  000AE6  EF65  F005         	goto	l99
+  1096  000AEA                     l1258:
+  1097                           
+  1098                           ; Switch size 1, requested type "simple"
+  1099                           ; Number of cases is 5, Range of values is 0 to 4
+  1100                           ; switch strategies available:
+  1101                           ; Name         Instructions Cycles
+  1102                           ; simple_byte           16     9 (average)
+  1103                           ;	Chosen strategy is simple_byte
+  1104  000AEA  5002               	movf	??_setupUART^0,w,c
+  1105  000AEC  0A00               	xorlw	0	; case 0
+  1106  000AEE  B4D8               	btfsc	status,2,c
+  1107  000AF0  EF3F  F005         	goto	l93
+  1108  000AF4  0A01               	xorlw	1	; case 1
+  1109  000AF6  B4D8               	btfsc	status,2,c
+  1110  000AF8  EF49  F005         	goto	l95
+  1111  000AFC  0A03               	xorlw	3	; case 2
+  1112  000AFE  B4D8               	btfsc	status,2,c
+  1113  000B00  EF4F  F005         	goto	l96
+  1114  000B04  0A01               	xorlw	1	; case 3
+  1115  000B06  B4D8               	btfsc	status,2,c
+  1116  000B08  EF55  F005         	goto	l97
+  1117  000B0C  0A07               	xorlw	7	; case 4
+  1118  000B0E  B4D8               	btfsc	status,2,c
+  1119  000B10  EF5F  F005         	goto	l98
+  1120  000B14  EF65  F005         	goto	l99
+  1121  000B18                     l102:
+  1122                           
+  1123                           ;../Peripherals/EUSART/EUSART18f4550.c: 267:                     TXSTAbits.SYNC=0;
+  1124  000B18  98AC               	bcf	172,4,c	;volatile
+  1125                           
+  1126                           ;../Peripherals/EUSART/EUSART18f4550.c: 268:                     TXSTAbits.BRGH = 0;
+  1127  000B1A  94AC               	bcf	172,2,c	;volatile
+  1128                           
+  1129                           ;../Peripherals/EUSART/EUSART18f4550.c: 269:                     BAUDCONbits.ABDOVF = 0;
+  1130  000B1C  9EB8               	bcf	184,7,c	;volatile
+  1131                           
+  1132                           ;../Peripherals/EUSART/EUSART18f4550.c: 270:                     BAUDCONbits.BRG16 = 0;
+  1133  000B1E  96B8               	bcf	184,3,c	;volatile
+  1134  000B20  EF44  F004         	goto	l1080
+  1135  000B24                     l104:
+  1136                           
+  1137                           ;../Peripherals/EUSART/EUSART18f4550.c: 276:                     TXSTAbits.SYNC=0;
+  1138  000B24  98AC               	bcf	172,4,c	;volatile
+  1139                           
+  1140                           ;../Peripherals/EUSART/EUSART18f4550.c: 277:                     TXSTAbits.BRGH = 1;
+  1141  000B26  84AC               	bsf	172,2,c	;volatile
+  1142                           
+  1143                           ;../Peripherals/EUSART/EUSART18f4550.c: 278:                     BAUDCONbits.ABDOVF = 0;
+  1144  000B28  9EB8               	bcf	184,7,c	;volatile
+  1145                           
+  1146                           ;../Peripherals/EUSART/EUSART18f4550.c: 279:                     BAUDCONbits.BRG16 = 0;
+  1147  000B2A  96B8               	bcf	184,3,c	;volatile
+  1148  000B2C  EF44  F004         	goto	l1080
+  1149  000B30                     l105:
+  1150                           
+  1151                           ;../Peripherals/EUSART/EUSART18f4550.c: 285:                     TXSTAbits.SYNC=0;
+  1152  000B30  98AC               	bcf	172,4,c	;volatile
+  1153                           
+  1154                           ;../Peripherals/EUSART/EUSART18f4550.c: 286:                     TXSTAbits.BRGH = 1;
+  1155  000B32  84AC               	bsf	172,2,c	;volatile
+  1156                           
+  1157                           ;../Peripherals/EUSART/EUSART18f4550.c: 287:                     BAUDCONbits.ABDOVF = 0;
+  1158  000B34  9EB8               	bcf	184,7,c	;volatile
+  1159                           
+  1160                           ;../Peripherals/EUSART/EUSART18f4550.c: 288:                     BAUDCONbits.BRG16 = 0;
+  1161  000B36  96B8               	bcf	184,3,c	;volatile
+  1162  000B38  EF54  F004         	goto	l1084
+  1163  000B3C                     l106:
+  1164                           
+  1165                           ;../Peripherals/EUSART/EUSART18f4550.c: 294:                     TXSTAbits.SYNC=0;
+  1166  000B3C  98AC               	bcf	172,4,c	;volatile
+  1167                           
+  1168                           ;../Peripherals/EUSART/EUSART18f4550.c: 295:                     TXSTAbits.BRGH = 1;
+  1169  000B3E  84AC               	bsf	172,2,c	;volatile
+  1170                           
+  1171                           ;../Peripherals/EUSART/EUSART18f4550.c: 296:                     BAUDCONbits.ABDOVF = 0;
+  1172  000B40  9EB8               	bcf	184,7,c	;volatile
+  1173                           
+  1174                           ;../Peripherals/EUSART/EUSART18f4550.c: 297:                     BAUDCONbits.BRG16 = 1;
+  1175  000B42  86B8               	bsf	184,3,c	;volatile
+  1176  000B44  EF5E  F004         	goto	l1086
+  1177  000B48                     l107:
+  1178                           
+  1179                           ;../Peripherals/EUSART/EUSART18f4550.c: 303:                     TXSTAbits.SYNC=0;
+  1180  000B48  98AC               	bcf	172,4,c	;volatile
+  1181                           
+  1182                           ;../Peripherals/EUSART/EUSART18f4550.c: 304:                     TXSTAbits.BRGH = 1;
+  1183  000B4A  84AC               	bsf	172,2,c	;volatile
+  1184                           
+  1185                           ;../Peripherals/EUSART/EUSART18f4550.c: 305:                     BAUDCONbits.ABDOVF = 0;
+  1186  000B4C  9EB8               	bcf	184,7,c	;volatile
+  1187                           
+  1188                           ;../Peripherals/EUSART/EUSART18f4550.c: 306:                     BAUDCONbits.BRG16 = 1;
+  1189  000B4E  86B8               	bsf	184,3,c	;volatile
+  1190  000B50  EF68  F004         	goto	l1088
+  1191  000B54                     l108:
+  1192                           
+  1193                           ;../Peripherals/EUSART/EUSART18f4550.c: 312:                     TXSTAbits.SYNC=0;
+  1194  000B54  98AC               	bcf	172,4,c	;volatile
+  1195                           
+  1196                           ;../Peripherals/EUSART/EUSART18f4550.c: 313:                     TXSTAbits.BRGH = 1;
+  1197  000B56  84AC               	bsf	172,2,c	;volatile
+  1198                           
+  1199                           ;../Peripherals/EUSART/EUSART18f4550.c: 314:                     BAUDCONbits.ABDOVF = 0;
+  1200  000B58  9EB8               	bcf	184,7,c	;volatile
+  1201                           
+  1202                           ;../Peripherals/EUSART/EUSART18f4550.c: 315:                     BAUDCONbits.BRG16 = 0;
+  1203  000B5A  96B8               	bcf	184,3,c	;volatile
+  1204  000B5C  EF44  F004         	goto	l1080
+  1205  000B60                     l1158:
+  1206  000B60  5001               	movf	setupUART@BaudRate^0,w,c
+  1207  000B62  6E02               	movwf	??_setupUART^0,c
+  1208  000B64  6A03               	clrf	(??_setupUART+1)^0,c
+  1209                           
+  1210                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+  1211                           ; Switch size 1, requested type "simple"
+  1212                           ; Number of cases is 1, Range of values is 0 to 0
+  1213                           ; switch strategies available:
+  1214                           ; Name         Instructions Cycles
+  1215                           ; simple_byte            4     3 (average)
+  1216                           ;	Chosen strategy is simple_byte
+  1217  000B66  5003               	movf	(??_setupUART+1)^0,w,c
+  1218  000B68  0A00               	xorlw	0	; case 0
+  1219  000B6A  B4D8               	btfsc	status,2,c
+  1220  000B6C  EFBA  F005         	goto	l1260
+  1221  000B70  EFAA  F005         	goto	l108
+  1222  000B74                     l1260:
+  1223                           
+  1224                           ; Switch size 1, requested type "simple"
+  1225                           ; Number of cases is 5, Range of values is 0 to 4
+  1226                           ; switch strategies available:
+  1227                           ; Name         Instructions Cycles
+  1228                           ; simple_byte           16     9 (average)
+  1229                           ;	Chosen strategy is simple_byte
+  1230  000B74  5002               	movf	??_setupUART^0,w,c
+  1231  000B76  0A00               	xorlw	0	; case 0
+  1232  000B78  B4D8               	btfsc	status,2,c
+  1233  000B7A  EF8C  F005         	goto	l102
+  1234  000B7E  0A01               	xorlw	1	; case 1
+  1235  000B80  B4D8               	btfsc	status,2,c
+  1236  000B82  EF92  F005         	goto	l104
+  1237  000B86  0A03               	xorlw	3	; case 2
+  1238  000B88  B4D8               	btfsc	status,2,c
+  1239  000B8A  EF98  F005         	goto	l105
+  1240  000B8E  0A01               	xorlw	1	; case 3
+  1241  000B90  B4D8               	btfsc	status,2,c
+  1242  000B92  EF9E  F005         	goto	l106
+  1243  000B96  0A07               	xorlw	7	; case 4
+  1244  000B98  B4D8               	btfsc	status,2,c
+  1245  000B9A  EFA4  F005         	goto	l107
+  1246  000B9E  EFAA  F005         	goto	l108
+  1247  000BA2                     l1162:
+  1248  000BA2  5004               	movf	setupUART@freq^0,w,c
+  1249  000BA4  6E02               	movwf	??_setupUART^0,c
+  1250  000BA6  6A03               	clrf	(??_setupUART+1)^0,c
+  1251                           
+  1252                           ; Switch on 2 bytes has been partitioned into a top level switch of size 1, and 1 sub-sw
+      +                          itches
+  1253                           ; Switch size 1, requested type "simple"
+  1254                           ; Number of cases is 1, Range of values is 0 to 0
+  1255                           ; switch strategies available:
+  1256                           ; Name         Instructions Cycles
+  1257                           ; simple_byte            4     3 (average)
+  1258                           ;	Chosen strategy is simple_byte
+  1259  000BA8  5003               	movf	(??_setupUART+1)^0,w,c
+  1260  000BAA  0A00               	xorlw	0	; case 0
+  1261  000BAC  B4D8               	btfsc	status,2,c
+  1262  000BAE  EFDB  F005         	goto	l1262
+  1263  000BB2  EFB0  F005         	goto	l1158
+  1264  000BB6                     l1262:
+  1265                           
+  1266                           ; Switch size 1, requested type "simple"
+  1267                           ; Number of cases is 4, Range of values is 0 to 3
+  1268                           ; switch strategies available:
+  1269                           ; Name         Instructions Cycles
+  1270                           ; simple_byte           13     7 (average)
+  1271                           ;	Chosen strategy is simple_byte
+  1272  000BB6  5002               	movf	??_setupUART^0,w,c
+  1273  000BB8  0A00               	xorlw	0	; case 0
+  1274  000BBA  B4D8               	btfsc	status,2,c
+  1275  000BBC  EF74  F004         	goto	l1094
+  1276  000BC0  0A01               	xorlw	1	; case 1
+  1277  000BC2  B4D8               	btfsc	status,2,c
+  1278  000BC4  EFC5  F004         	goto	l1110
+  1279  000BC8  0A03               	xorlw	3	; case 2
+  1280  000BCA  B4D8               	btfsc	status,2,c
+  1281  000BCC  EF1E  F005         	goto	l1126
+  1282  000BD0  0A01               	xorlw	1	; case 3
+  1283  000BD2  B4D8               	btfsc	status,2,c
+  1284  000BD4  EF6B  F005         	goto	l1142
+  1285  000BD8  EFB0  F005         	goto	l1158
+  1286  000BDC                     l72:
+  1287                           
+  1288                           ;../Peripherals/EUSART/EUSART18f4550.c: 322:     TRISCbits.RC7 = 1;
+  1289  000BDC  8E94               	bsf	148,7,c	;volatile
+  1290                           
+  1291                           ;../Peripherals/EUSART/EUSART18f4550.c: 323:     TRISCbits.RC6 = 0;
+  1292  000BDE  9C94               	bcf	148,6,c	;volatile
+  1293                           
+  1294                           ;../Peripherals/EUSART/EUSART18f4550.c: 326:     TXSTAbits.TX9 = 0;
+  1295  000BE0  9CAC               	bcf	172,6,c	;volatile
+  1296                           
+  1297                           ;../Peripherals/EUSART/EUSART18f4550.c: 327:     TXSTAbits.TXEN = 1;
+  1298  000BE2  8AAC               	bsf	172,5,c	;volatile
+  1299                           
+  1300                           ;../Peripherals/EUSART/EUSART18f4550.c: 328:     TXSTAbits.SYNC=0;
+  1301  000BE4  98AC               	bcf	172,4,c	;volatile
+  1302                           
+  1303                           ;../Peripherals/EUSART/EUSART18f4550.c: 329:     TXSTAbits.SENDB = 0;
+  1304  000BE6  96AC               	bcf	172,3,c	;volatile
+  1305                           
+  1306                           ;../Peripherals/EUSART/EUSART18f4550.c: 330:     TXSTAbits.BRGH = 0;
+  1307  000BE8  94AC               	bcf	172,2,c	;volatile
+  1308                           
+  1309                           ;../Peripherals/EUSART/EUSART18f4550.c: 331:     TXSTAbits.TRMT = 1;
+  1310  000BEA  82AC               	bsf	172,1,c	;volatile
+  1311                           
+  1312                           ;../Peripherals/EUSART/EUSART18f4550.c: 333:     RCSTAbits.SPEN = 1;
+  1313  000BEC  8EAB               	bsf	171,7,c	;volatile
+  1314                           
+  1315                           ;../Peripherals/EUSART/EUSART18f4550.c: 334:     RCSTAbits.RX9 = 0;
+  1316  000BEE  9CAB               	bcf	171,6,c	;volatile
+  1317                           
+  1318                           ;../Peripherals/EUSART/EUSART18f4550.c: 335:     RCSTAbits.CREN = 1;
+  1319  000BF0  88AB               	bsf	171,4,c	;volatile
+  1320                           
+  1321                           ;../Peripherals/EUSART/EUSART18f4550.c: 336:     RCSTAbits.ADDEN = 0;
+  1322  000BF2  96AB               	bcf	171,3,c	;volatile
+  1323                           
+  1324                           ;../Peripherals/EUSART/EUSART18f4550.c: 337:     RCSTAbits.FERR = 0;
+  1325  000BF4  94AB               	bcf	171,2,c	;volatile
+  1326                           
+  1327                           ;../Peripherals/EUSART/EUSART18f4550.c: 338:     RCSTAbits.OERR = 0;
+  1328  000BF6  92AB               	bcf	171,1,c	;volatile
+  1329                           
+  1330                           ;../Peripherals/EUSART/EUSART18f4550.c: 340:     BAUDCONbits.ABDOVF = 0;
+  1331  000BF8  9EB8               	bcf	184,7,c	;volatile
+  1332                           
+  1333                           ;../Peripherals/EUSART/EUSART18f4550.c: 341:     BAUDCONbits.BRG16 = 1;
+  1334  000BFA  86B8               	bsf	184,3,c	;volatile
+  1335  000BFC                     
+  1336                           ;../Peripherals/EUSART/EUSART18f4550.c: 342:     SPBRG = 10;
+  1337  000BFC  0E0A               	movlw	10
+  1338  000BFE  6EAF               	movwf	175,c	;volatile
+  1339  000C00  0012               	return		;funcret
+  1340  000C02                     __end_of_setupUART:
+  1341                           	callstack 0
+  1342                           
+  1343 ;; *************** function _readUART *****************
+  1344 ;; Defined at:
+  1345 ;;		line 413 in file "../Peripherals/EUSART/EUSART18f4550.c"
+  1346 ;; Parameters:    Size  Location     Type
+  1347 ;;		None
+  1348 ;; Auto vars:     Size  Location     Type
+  1349 ;;  receiverData    1    0[COMRAM] unsigned char 
+  1350 ;; Return value:  Size  Location     Type
+  1351 ;;                  1    wreg      unsigned char 
+  1352 ;; Registers used:
+  1353 ;;		wreg, status,2
+  1354 ;; Tracked objects:
+  1355 ;;		On entry : 0/0
+  1356 ;;		On exit  : 0/0
+  1357 ;;		Unchanged: 0/0
+  1358 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+  1359 ;;      Params:         0       0       0       0       0       0       0       0       0
+  1360 ;;      Locals:         1       0       0       0       0       0       0       0       0
+  1361 ;;      Temps:          0       0       0       0       0       0       0       0       0
+  1362 ;;      Totals:         1       0       0       0       0       0       0       0       0
+  1363 ;;Total ram usage:        1 bytes
+  1364 ;; Hardware stack levels used: 1
+  1365 ;; This function calls:
+  1366 ;;		Nothing
+  1367 ;; This function is called by:
+  1368 ;;		_main
+  1369 ;; This function uses a non-reentrant model
+  1370 ;;
+  1371                           
+  1372                           	psect	text2
+  1373  000D04                     __ptext2:
+  1374                           	callstack 0
+  1375  000D04                     _readUART:
+  1376                           	callstack 30
+  1377  000D04                     
+  1378                           ;../Peripherals/EUSART/EUSART18f4550.c: 414:     unsigned char receiverData;;../Peripher
+      +                          als/EUSART/EUSART18f4550.c: 415:     TXSTAbits.SYNC=0;
+  1379  000D04  98AC               	bcf	172,4,c	;volatile
+  1380                           
+  1381                           ;../Peripherals/EUSART/EUSART18f4550.c: 416:     RCSTAbits.SPEN = 1;
+  1382  000D06  8EAB               	bsf	171,7,c	;volatile
+  1383                           
+  1384                           ;../Peripherals/EUSART/EUSART18f4550.c: 417:     RCSTAbits.CREN = 1;
+  1385  000D08  88AB               	bsf	171,4,c	;volatile
+  1386  000D0A                     l154:
+  1387  000D0A  AA9E               	btfss	158,5,c	;volatile
+  1388  000D0C  EF8A  F006         	goto	u31
+  1389  000D10  EF8C  F006         	goto	u30
+  1390  000D14                     u31:
+  1391  000D14  EF85  F006         	goto	l154
+  1392  000D18                     u30:
+  1393  000D18                     
+  1394                           ;../Peripherals/EUSART/EUSART18f4550.c: 419:     receiverData = RCREG;
+  1395  000D18  CFAE F001          	movff	4014,readUART@receiverData	;volatile
+  1396  000D1C                     
+  1397                           ;../Peripherals/EUSART/EUSART18f4550.c: 420:     return receiverData;
+  1398  000D1C  5001               	movf	readUART@receiverData^0,w,c
+  1399  000D1E  0012               	return		;funcret
+  1400  000D20                     __end_of_readUART:
+  1401                           	callstack 0
+  1402                           
+  1403 ;; *************** function _printUART *****************
+  1404 ;; Defined at:
+  1405 ;;		line 356 in file "../Peripherals/EUSART/EUSART18f4550.c"
+  1406 ;; Parameters:    Size  Location     Type
+  1407 ;;  string          2    1[COMRAM] PTR unsigned char 
+  1408 ;;		 -> STR_2(54), STR_1(35), 
+  1409 ;; Auto vars:     Size  Location     Type
+  1410 ;;  index           2    5[COMRAM] unsigned int 
+  1411 ;; Return value:  Size  Location     Type
+  1412 ;;                  1    wreg      void 
+  1413 ;; Registers used:
+  1414 ;;		wreg, status,2, status,0, tblptrl, tblptrh, tblptru, cstack
+  1415 ;; Tracked objects:
+  1416 ;;		On entry : 0/0
+  1417 ;;		On exit  : 0/0
+  1418 ;;		Unchanged: 0/0
+  1419 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+  1420 ;;      Params:         2       0       0       0       0       0       0       0       0
+  1421 ;;      Locals:         2       0       0       0       0       0       0       0       0
+  1422 ;;      Temps:          2       0       0       0       0       0       0       0       0
+  1423 ;;      Totals:         6       0       0       0       0       0       0       0       0
+  1424 ;;Total ram usage:        6 bytes
+  1425 ;; Hardware stack levels used: 1
+  1426 ;; Hardware stack levels required when called: 1
+  1427 ;; This function calls:
+  1428 ;;		_sendUART
+  1429 ;; This function is called by:
+  1430 ;;		_main
+  1431 ;; This function uses a non-reentrant model
+  1432 ;;
+  1433                           
+  1434                           	psect	text3
+  1435  000C90                     __ptext3:
+  1436                           	callstack 0
+  1437  000C90                     _printUART:
+  1438                           	callstack 29
+  1439  000C90                     
+  1440                           ;../Peripherals/EUSART/EUSART18f4550.c: 357:     unsigned int index = 0;
+  1441  000C90  0E00               	movlw	0
+  1442  000C92  6E07               	movwf	(printUART@index+1)^0,c
+  1443  000C94  0E00               	movlw	0
+  1444  000C96  6E06               	movwf	printUART@index^0,c
+  1445                           
+  1446                           ;../Peripherals/EUSART/EUSART18f4550.c: 358:     while(string[index] != 0x00){
+  1447  000C98  EF5E  F006         	goto	l1196
+  1448  000C9C                     l1192:
+  1449                           
+  1450                           ;../Peripherals/EUSART/EUSART18f4550.c: 359:         sendUART(string[index]);
+  1451  000C9C  5006               	movf	printUART@index^0,w,c
+  1452  000C9E  2402               	addwf	printUART@string^0,w,c
+  1453  000CA0  6E04               	movwf	??_printUART^0,c
+  1454  000CA2  5007               	movf	(printUART@index+1)^0,w,c
+  1455  000CA4  2003               	addwfc	(printUART@string+1)^0,w,c
+  1456  000CA6  6E05               	movwf	(??_printUART+1)^0,c
+  1457  000CA8  C004  FFF6         	movff	??_printUART,tblptrl
+  1458  000CAC  C005  FFF7         	movff	??_printUART+1,tblptrh
+  1459  000CB0                     	if	0	;tblptru may be non-zero
+  1460  000CB0                     	endif
+  1461  000CB0                     	if	0	;tblptru may be non-zero
+  1462  000CB0                     	endif
+  1463  000CB0  0008               	tblrd		*
+  1464  000CB2  50F5               	movf	tablat,w,c
+  1465  000CB4  EC73  F006         	call	_sendUART
+  1466  000CB8                     
+  1467                           ;../Peripherals/EUSART/EUSART18f4550.c: 360:         ++index;
+  1468  000CB8  4A06               	infsnz	printUART@index^0,f,c
+  1469  000CBA  2A07               	incf	(printUART@index+1)^0,f,c
+  1470  000CBC                     l1196:
+  1471                           
+  1472                           ;../Peripherals/EUSART/EUSART18f4550.c: 358:     while(string[index] != 0x00){
+  1473  000CBC  5006               	movf	printUART@index^0,w,c
+  1474  000CBE  2402               	addwf	printUART@string^0,w,c
+  1475  000CC0  6E04               	movwf	??_printUART^0,c
+  1476  000CC2  5007               	movf	(printUART@index+1)^0,w,c
+  1477  000CC4  2003               	addwfc	(printUART@string+1)^0,w,c
+  1478  000CC6  6E05               	movwf	(??_printUART+1)^0,c
+  1479  000CC8  C004  FFF6         	movff	??_printUART,tblptrl
+  1480  000CCC  C005  FFF7         	movff	??_printUART+1,tblptrh
+  1481  000CD0                     	if	0	;tblptru may be non-zero
+  1482  000CD0                     	endif
+  1483  000CD0                     	if	0	;tblptru may be non-zero
+  1484  000CD0                     	endif
+  1485  000CD0  0008               	tblrd		*
+  1486  000CD2  50F5               	movf	tablat,w,c
+  1487  000CD4  0900               	iorlw	0
+  1488  000CD6  A4D8               	btfss	status,2,c
+  1489  000CD8  EF70  F006         	goto	u101
+  1490  000CDC  EF72  F006         	goto	u100
+  1491  000CE0                     u101:
+  1492  000CE0  EF4E  F006         	goto	l1192
+  1493  000CE4                     u100:
+  1494  000CE4  0012               	return		;funcret
+  1495  000CE6                     __end_of_printUART:
+  1496                           	callstack 0
+  1497                           
+  1498 ;; *************** function _sendUART *****************
+  1499 ;; Defined at:
+  1500 ;;		line 345 in file "../Peripherals/EUSART/EUSART18f4550.c"
+  1501 ;; Parameters:    Size  Location     Type
+  1502 ;;  data            1    wreg     unsigned char 
+  1503 ;; Auto vars:     Size  Location     Type
+  1504 ;;  data            1    0[COMRAM] unsigned char 
+  1505 ;; Return value:  Size  Location     Type
+  1506 ;;                  1    wreg      void 
+  1507 ;; Registers used:
+  1508 ;;		wreg
+  1509 ;; Tracked objects:
+  1510 ;;		On entry : 0/0
+  1511 ;;		On exit  : 0/0
+  1512 ;;		Unchanged: 0/0
+  1513 ;; Data sizes:     COMRAM   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7
+  1514 ;;      Params:         0       0       0       0       0       0       0       0       0
+  1515 ;;      Locals:         1       0       0       0       0       0       0       0       0
+  1516 ;;      Temps:          0       0       0       0       0       0       0       0       0
+  1517 ;;      Totals:         1       0       0       0       0       0       0       0       0
+  1518 ;;Total ram usage:        1 bytes
+  1519 ;; Hardware stack levels used: 1
+  1520 ;; This function calls:
+  1521 ;;		Nothing
+  1522 ;; This function is called by:
+  1523 ;;		_main
+  1524 ;;		_printUART
+  1525 ;;		_printUARTLn
+  1526 ;;		_printUARTInt
+  1527 ;;		_printUARTIntLn
+  1528 ;;		_printUARTFloat
+  1529 ;;		_printUARTFloatLn
+  1530 ;; This function uses a non-reentrant model
+  1531 ;;
+  1532                           
+  1533                           	psect	text4
+  1534  000CE6                     __ptext4:
+  1535                           	callstack 0
+  1536  000CE6                     _sendUART:
+  1537                           	callstack 30
+  1538                           
+  1539                           ;incstack = 0
+  1540                           ;sendUART@data stored from wreg
+  1541  000CE6  6E01               	movwf	sendUART@data^0,c
+  1542  000CE8                     
+  1543                           ;../Peripherals/EUSART/EUSART18f4550.c: 347:     TXSTAbits.SYNC=0;
+  1544  000CE8  98AC               	bcf	172,4,c	;volatile
+  1545                           
+  1546                           ;../Peripherals/EUSART/EUSART18f4550.c: 348:     RCSTAbits.SPEN = 1;
+  1547  000CEA  8EAB               	bsf	171,7,c	;volatile
+  1548                           
+  1549                           ;../Peripherals/EUSART/EUSART18f4550.c: 349:     TXSTAbits.TXEN = 1;
+  1550  000CEC  8AAC               	bsf	172,5,c	;volatile
+  1551                           
+  1552                           ;../Peripherals/EUSART/EUSART18f4550.c: 351:     TXSTAbits.TXEN = 1;
+  1553  000CEE  8AAC               	bsf	172,5,c	;volatile
+  1554  000CF0                     l112:
+  1555  000CF0  A2AC               	btfss	172,1,c	;volatile
+  1556  000CF2  EF7D  F006         	goto	u11
+  1557  000CF6  EF7F  F006         	goto	u10
+  1558  000CFA                     u11:
+  1559  000CFA  EF78  F006         	goto	l112
+  1560  000CFE                     u10:
+  1561  000CFE                     
+  1562                           ;../Peripherals/EUSART/EUSART18f4550.c: 353:     TXREG = data;
+  1563  000CFE  C001  FFAD         	movff	sendUART@data,4013	;volatile
+  1564  000D02  0012               	return		;funcret
+  1565  000D04                     __end_of_sendUART:
+  1566                           	callstack 0
+  1567                           
+  1568                           	psect	rparam
+  1569  0000                     
+  1570                           	psect	idloc
+  1571                           
+  1572                           ;Config register IDLOC0 @ 0x200000
+  1573                           ;	unspecified, using default values
+  1574  200000                     	org	2097152
+  1575  200000  FF                 	db	255
+  1576                           
+  1577                           ;Config register IDLOC1 @ 0x200001
+  1578                           ;	unspecified, using default values
+  1579  200001                     	org	2097153
+  1580  200001  FF                 	db	255
+  1581                           
+  1582                           ;Config register IDLOC2 @ 0x200002
+  1583                           ;	unspecified, using default values
+  1584  200002                     	org	2097154
+  1585  200002  FF                 	db	255
+  1586                           
+  1587                           ;Config register IDLOC3 @ 0x200003
+  1588                           ;	unspecified, using default values
+  1589  200003                     	org	2097155
+  1590  200003  FF                 	db	255
+  1591                           
+  1592                           ;Config register IDLOC4 @ 0x200004
+  1593                           ;	unspecified, using default values
+  1594  200004                     	org	2097156
+  1595  200004  FF                 	db	255
+  1596                           
+  1597                           ;Config register IDLOC5 @ 0x200005
+  1598                           ;	unspecified, using default values
+  1599  200005                     	org	2097157
+  1600  200005  FF                 	db	255
+  1601                           
+  1602                           ;Config register IDLOC6 @ 0x200006
+  1603                           ;	unspecified, using default values
+  1604  200006                     	org	2097158
+  1605  200006  FF                 	db	255
+  1606                           
+  1607                           ;Config register IDLOC7 @ 0x200007
+  1608                           ;	unspecified, using default values
+  1609  200007                     	org	2097159
+  1610  200007  FF                 	db	255
+  1611                           
+  1612                           	psect	config
+  1613                           
+  1614                           ;Config register CONFIG1L @ 0x300000
+  1615                           ;	PLL Prescaler Selection bits
+  1616                           ;	PLLDIV = 1, No prescale (4 MHz oscillator input drives PLL directly)
+  1617                           ;	System Clock Postscaler Selection bits
+  1618                           ;	CPUDIV = OSC1_PLL2, [Primary Oscillator Src: /1][96 MHz PLL Src: /2]
+  1619                           ;	USB Clock Selection bit (used in Full-Speed USB mode only; UCFG:FSEN = 1)
+  1620                           ;	USBDIV = 1, USB clock source comes directly from the primary oscillator block with no 
+      +                          postscale
+  1621  300000                     	org	3145728
+  1622  300000  00                 	db	0
+  1623                           
+  1624                           ;Config register CONFIG1H @ 0x300001
+  1625                           ;	Oscillator Selection bits
+  1626                           ;	FOSC = HS, HS oscillator (HS)
+  1627                           ;	Fail-Safe Clock Monitor Enable bit
+  1628                           ;	FCMEN = OFF, Fail-Safe Clock Monitor disabled
+  1629                           ;	Internal/External Oscillator Switchover bit
+  1630                           ;	IESO = OFF, Oscillator Switchover mode disabled
+  1631  300001                     	org	3145729
+  1632  300001  0C                 	db	12
+  1633                           
+  1634                           ;Config register CONFIG2L @ 0x300002
+  1635                           ;	Power-up Timer Enable bit
+  1636                           ;	PWRT = OFF, PWRT disabled
+  1637                           ;	Brown-out Reset Enable bits
+  1638                           ;	BOR = ON, Brown-out Reset enabled in hardware only (SBOREN is disabled)
+  1639                           ;	Brown-out Reset Voltage bits
+  1640                           ;	BORV = 3, Minimum setting 2.05V
+  1641                           ;	USB Voltage Regulator Enable bit
+  1642                           ;	VREGEN = OFF, USB voltage regulator disabled
+  1643  300002                     	org	3145730
+  1644  300002  1F                 	db	31
+  1645                           
+  1646                           ;Config register CONFIG2H @ 0x300003
+  1647                           ;	Watchdog Timer Enable bit
+  1648                           ;	WDT = OFF, WDT disabled (control is placed on the SWDTEN bit)
+  1649                           ;	Watchdog Timer Postscale Select bits
+  1650                           ;	WDTPS = 32768, 1:32768
+  1651  300003                     	org	3145731
+  1652  300003  1E                 	db	30
+  1653                           
+  1654                           ; Padding undefined space
+  1655  300004                     	org	3145732
+  1656  300004  FF                 	db	255
+  1657                           
+  1658                           ;Config register CONFIG3H @ 0x300005
+  1659                           ;	CCP2 MUX bit
+  1660                           ;	CCP2MX = ON, CCP2 input/output is multiplexed with RC1
+  1661                           ;	PORTB A/D Enable bit
+  1662                           ;	PBADEN = OFF, PORTB<4:0> pins are configured as digital I/O on Reset
+  1663                           ;	Low-Power Timer 1 Oscillator Enable bit
+  1664                           ;	LPT1OSC = OFF, Timer1 configured for higher power operation
+  1665                           ;	MCLR Pin Enable bit
+  1666                           ;	MCLRE = ON, MCLR pin enabled; RE3 input pin disabled
+  1667  300005                     	org	3145733
+  1668  300005  81                 	db	129
+  1669                           
+  1670                           ;Config register CONFIG4L @ 0x300006
+  1671                           ;	Stack Full/Underflow Reset Enable bit
+  1672                           ;	STVREN = ON, Stack full/underflow will cause Reset
+  1673                           ;	Single-Supply ICSP Enable bit
+  1674                           ;	LVP = OFF, Single-Supply ICSP disabled
+  1675                           ;	Dedicated In-Circuit Debug/Programming Port (ICPORT) Enable bit
+  1676                           ;	ICPRT = OFF, ICPORT disabled
+  1677                           ;	Extended Instruction Set Enable bit
+  1678                           ;	XINST = OFF, Instruction set extension and Indexed Addressing mode disabled (Legacy mo
+      +                          de)
+  1679                           ;	Background Debugger Enable bit
+  1680                           ;	DEBUG = 0x1, unprogrammed default
+  1681  300006                     	org	3145734
+  1682  300006  81                 	db	129
+  1683                           
+  1684                           ; Padding undefined space
+  1685  300007                     	org	3145735
+  1686  300007  FF                 	db	255
+  1687                           
+  1688                           ;Config register CONFIG5L @ 0x300008
+  1689                           ;	Code Protection bit
+  1690                           ;	CP0 = OFF, Block 0 (000800-001FFFh) is not code-protected
+  1691                           ;	Code Protection bit
+  1692                           ;	CP1 = OFF, Block 1 (002000-003FFFh) is not code-protected
+  1693                           ;	Code Protection bit
+  1694                           ;	CP2 = OFF, Block 2 (004000-005FFFh) is not code-protected
+  1695                           ;	Code Protection bit
+  1696                           ;	CP3 = OFF, Block 3 (006000-007FFFh) is not code-protected
+  1697  300008                     	org	3145736
+  1698  300008  0F                 	db	15
+  1699                           
+  1700                           ;Config register CONFIG5H @ 0x300009
+  1701                           ;	Boot Block Code Protection bit
+  1702                           ;	CPB = OFF, Boot block (000000-0007FFh) is not code-protected
+  1703                           ;	Data EEPROM Code Protection bit
+  1704                           ;	CPD = OFF, Data EEPROM is not code-protected
+  1705  300009                     	org	3145737
+  1706  300009  C0                 	db	192
+  1707                           
+  1708                           ;Config register CONFIG6L @ 0x30000A
+  1709                           ;	Write Protection bit
+  1710                           ;	WRT0 = OFF, Block 0 (000800-001FFFh) is not write-protected
+  1711                           ;	Write Protection bit
+  1712                           ;	WRT1 = OFF, Block 1 (002000-003FFFh) is not write-protected
+  1713                           ;	Write Protection bit
+  1714                           ;	WRT2 = OFF, Block 2 (004000-005FFFh) is not write-protected
+  1715                           ;	Write Protection bit
+  1716                           ;	WRT3 = OFF, Block 3 (006000-007FFFh) is not write-protected
+  1717  30000A                     	org	3145738
+  1718  30000A  0F                 	db	15
+  1719                           
+  1720                           ;Config register CONFIG6H @ 0x30000B
+  1721                           ;	Configuration Register Write Protection bit
+  1722                           ;	WRTC = OFF, Configuration registers (300000-3000FFh) are not write-protected
+  1723                           ;	Boot Block Write Protection bit
+  1724                           ;	WRTB = OFF, Boot block (000000-0007FFh) is not write-protected
+  1725                           ;	Data EEPROM Write Protection bit
+  1726                           ;	WRTD = OFF, Data EEPROM is not write-protected
+  1727  30000B                     	org	3145739
+  1728  30000B  E0                 	db	224
+  1729                           
+  1730                           ;Config register CONFIG7L @ 0x30000C
+  1731                           ;	Table Read Protection bit
+  1732                           ;	EBTR0 = OFF, Block 0 (000800-001FFFh) is not protected from table reads executed in ot
+      +                          her blocks
+  1733                           ;	Table Read Protection bit
+  1734                           ;	EBTR1 = OFF, Block 1 (002000-003FFFh) is not protected from table reads executed in ot
+      +                          her blocks
+  1735                           ;	Table Read Protection bit
+  1736                           ;	EBTR2 = OFF, Block 2 (004000-005FFFh) is not protected from table reads executed in ot
+      +                          her blocks
+  1737                           ;	Table Read Protection bit
+  1738                           ;	EBTR3 = OFF, Block 3 (006000-007FFFh) is not protected from table reads executed in ot
+      +                          her blocks
+  1739  30000C                     	org	3145740
+  1740  30000C  0F                 	db	15
+  1741                           
+  1742                           ;Config register CONFIG7H @ 0x30000D
+  1743                           ;	Boot Block Table Read Protection bit
+  1744                           ;	EBTRB = OFF, Boot block (000000-0007FFh) is not protected from table reads executed in
+      +                           other blocks
+  1745  30000D                     	org	3145741
+  1746  30000D  40                 	db	64
+  1747                           tosu	equ	0xFFF
+  1748                           tosh	equ	0xFFE
+  1749                           tosl	equ	0xFFD
+  1750                           stkptr	equ	0xFFC
+  1751                           pclatu	equ	0xFFB
+  1752                           pclath	equ	0xFFA
+  1753                           pcl	equ	0xFF9
+  1754                           tblptru	equ	0xFF8
+  1755                           tblptrh	equ	0xFF7
+  1756                           tblptrl	equ	0xFF6
+  1757                           tablat	equ	0xFF5
+  1758                           prodh	equ	0xFF4
+  1759                           prodl	equ	0xFF3
+  1760                           indf0	equ	0xFEF
+  1761                           postinc0	equ	0xFEE
+  1762                           postdec0	equ	0xFED
+  1763                           preinc0	equ	0xFEC
+  1764                           plusw0	equ	0xFEB
+  1765                           fsr0h	equ	0xFEA
+  1766                           fsr0l	equ	0xFE9
+  1767                           wreg	equ	0xFE8
+  1768                           indf1	equ	0xFE7
+  1769                           postinc1	equ	0xFE6
+  1770                           postdec1	equ	0xFE5
+  1771                           preinc1	equ	0xFE4
+  1772                           plusw1	equ	0xFE3
+  1773                           fsr1h	equ	0xFE2
+  1774                           fsr1l	equ	0xFE1
+  1775                           bsr	equ	0xFE0
+  1776                           indf2	equ	0xFDF
+  1777                           postinc2	equ	0xFDE
+  1778                           postdec2	equ	0xFDD
+  1779                           preinc2	equ	0xFDC
+  1780                           plusw2	equ	0xFDB
+  1781                           fsr2h	equ	0xFDA
+  1782                           fsr2l	equ	0xFD9
+  1783                           status	equ	0xFD8
+
+Data Sizes:
+    Strings     95
+    Constant    0
+    Data        0
+    BSS         0
+    Persistent  0
+    Stack       0
+
+Auto Spaces:
+    Space          Size  Autos    Used
+    COMRAM           95     14      14
+    BANK0           160      0       0
+    BANK1           256      0       0
+    BANK2           256      0       0
+    BANK3           256      0       0
+    BANK4           256      0       0
+    BANK5           256      0       0
+    BANK6           256      0       0
+    BANK7           256      0       0
+
+Pointer List with Targets:
+
+    vfprintf$2	PTR PTR void  size(2) Largest target is 2
+		 -> sprintf@ap(COMRAM[2]), 
+
+    vfprintf$1	PTR const unsigned char  size(2) Largest target is 3
+		 -> STR_8(CODE[3]), STR_7(CODE[3]), STR_5(CODE[3]), STR_4(CODE[3]), 
+
+    vfprintf$0	PTR struct _IO_FILE size(2) Largest target is 7
+		 -> sprintf@f(COMRAM[6]), 
+
+    S884_IO_FILE$buffer	PTR unsigned char  size(2) Largest target is 20
+		 -> printUARTFloatLn@string(COMRAM[20]), printUARTFloat@string(COMRAM[20]), printUARTIntLn@string(COMRAM[15]), printUARTInt@string(COMRAM[15]), 
+
+    f.buffer	PTR unsigned char  size(2) Largest target is 20
+		 -> printUARTFloatLn@string(COMRAM[20]), printUARTFloat@string(COMRAM[20]), printUARTIntLn@string(COMRAM[15]), printUARTInt@string(COMRAM[15]), 
+
+    printUART@string	PTR unsigned char  size(2) Largest target is 54
+		 -> STR_2(CODE[54]), STR_1(CODE[35]), 
+
+    main@message1	PTR unsigned char  size(2) Largest target is 54
+		 -> STR_2(CODE[54]), 
+
+    main@message0	PTR unsigned char  size(2) Largest target is 35
+		 -> STR_1(CODE[35]), 
+
+
+Critical Paths under _main in COMRAM
+
+    _main->_printUART
+    _printUART->_sendUART
+
+Critical Paths under _main in BANK0
+
+    None.
+
+Critical Paths under _main in BANK1
+
+    None.
+
+Critical Paths under _main in BANK2
+
+    None.
+
+Critical Paths under _main in BANK3
+
+    None.
+
+Critical Paths under _main in BANK4
+
+    None.
+
+Critical Paths under _main in BANK5
+
+    None.
+
+Critical Paths under _main in BANK6
+
+    None.
+
+Critical Paths under _main in BANK7
+
+    None.
+
+Call Graph Tables:
+
+ ---------------------------------------------------------------------------------
+ (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+ ---------------------------------------------------------------------------------
+ (0) _main                                                 8     8      0     565
+                                              7 COMRAM     7     7      0
+                          _printUART
+                           _readUART
+                           _sendUART
+                          _setupUART
+ ---------------------------------------------------------------------------------
+ (1) _setupUART                                            4     3      1     208
+                                              0 COMRAM     4     3      1
+ ---------------------------------------------------------------------------------
+ (1) _readUART                                             1     1      0      15
+                                              0 COMRAM     1     1      0
+ ---------------------------------------------------------------------------------
+ (1) _printUART                                            6     4      2     257
+                                              1 COMRAM     6     4      2
+                           _sendUART
+ ---------------------------------------------------------------------------------
+ (1) _sendUART                                             1     1      0      15
+                                              0 COMRAM     1     1      0
+ ---------------------------------------------------------------------------------
+ Estimated maximum stack depth 1
+ ---------------------------------------------------------------------------------
+
+ Call Graph Graphs:
+
+ _main (ROOT)
+   _printUART
+     _sendUART
+   _readUART
+   _sendUART
+   _setupUART
+
+ Address spaces:
+Name               Size   Autos  Total    Cost      Usage
+BITCOMRAM           5F      0       0       0        0.0%
+EEDATA             100      0       0       0        0.0%
+NULL                 0      0       0       0        0.0%
+CODE                 0      0       0       0        0.0%
+COMRAM              5F      E       E       1       14.7%
+STACK                0      0       0       2        0.0%
+DATA                 0      0       0       3        0.0%
+BITBANK0            A0      0       0       4        0.0%
+BANK0               A0      0       0       5        0.0%
+BITBANK1           100      0       0       6        0.0%
+BANK1              100      0       0       7        0.0%
+BITBANK2           100      0       0       8        0.0%
+BANK2              100      0       0       9        0.0%
+BITBANK3           100      0       0      10        0.0%
+BANK3              100      0       0      11        0.0%
+BITBANK4           100      0       0      12        0.0%
+BANK4              100      0       0      13        0.0%
+BITBANK5           100      0       0      14        0.0%
+BANK5              100      0       0      15        0.0%
+BITBANK6           100      0       0      16        0.0%
+BANK6              100      0       0      17        0.0%
+BITBANK7           100      0       0      18        0.0%
+BANK7              100      0       0      19        0.0%
+ABS                  0      0       0      20        0.0%
+BIGRAM             7FF      0       0      21        0.0%
+BITSFR               0      0       0     200        0.0%
+SFR                  0      0       0     200        0.0%
+
+
+Microchip Technology PIC18 Macro Assembler V2.32 build 20210201212658 
+Symbol Table                                                                                   Thu Jun 27 13:06:42 2024
+
+                     l36 0C6C                       l70 08C8                       l71 08DC  
+                     l80 0972                       l72 0BDC                       l81 097E  
+                     l65 0880                       l90 0A30                       l75 092A  
+                     l67 0894                       l84 09CC                       l68 08A0  
+                     l93 0A7E                       l77 093E                       l69 08B4  
+                     l86 09E0                       l78 0952                       l95 0A92  
+                     l87 09F4                       l79 095E                       l96 0A9E  
+                     l88 0A08                       l97 0AAA                       l89 0A1C  
+                     l98 0ABE                       l99 0ACA                       u10 0CFE  
+                     u11 0CFA                       u30 0D18                       u31 0D14  
+                    l102 0B18                      l112 0CF0                      l104 0B24  
+                    l121 0CE4                      l105 0B30                      l106 0B3C  
+                    l115 0D02                      l107 0B48                      l108 0B54  
+                    l109 0C00                      l154 0D0A                      l156 0D18  
+                    l157 0D1E                      l840 0CE8                      l842 0CFE  
+                    l964 0D04                      l966 0D1C                      u100 0CE4  
+                    u101 0CE0                      u110 0C66                      u111 0C62  
+                    u127 0C7A                      wreg 000FE8                     l1110 098A  
+                   l1102 0966                     l1120 0A24                     l1112 09D4  
+                   l1200 0C0A                     l1114 09E8                     l1210 0C22  
+                   l1202 0C14                     l1116 09FC                     l1220 0C54  
+                   l1212 0C2C                     l1204 0C16                     l1142 0AD6  
+                   l1134 0AB2                     l1126 0A3C                     l1118 0A10  
+                   l1222 0C58                     l1214 0C34                     l1206 0C1A  
+                   l1128 0A86                     l1080 0888                     l1224 0C66  
+                   l1216 0C3C                     l1208 0C1E                     l1162 0BA2  
+                   l1226 0C70                     l1218 0C48                     l1164 0BFC  
+                   l1260 0B74                     l1252 08FC                     l1084 08A8  
+                   l1190 0C90                     l1262 0BB6                     l1158 0B60  
+                   l1254 099E                     l1094 08E8                     l1086 08BC  
+                   l1078 0864                     l1192 0C9C                     l1256 0A50  
+                   l1096 0932                     l1088 08D0                     l1194 0CB8  
+                   l1258 0AEA                     l1098 0946                     l1196 0CBC  
+                   l1198 0C02                     STR_1 0837                     STR_2 0801  
+                   STR_4 085A                     STR_7 085D                     _LATB 000F8A  
+                   _LATC 000F8B                     _LATD 000F8C                     _main 0C02  
+                   start 0000             ___param_bank 000000                    ?_main 0001  
+                  _RCREG 000FAE                    _SPBRG 000FAF                    _PORTB 000F81  
+                  _PORTC 000F82                    _PORTD 000F83                    _TRISB 000F93  
+                  _TRISC 000F94                    _TRISD 000F95                    _TXREG 000FAD  
+           main@message0 000A             main@message1 000C                    tablat 000FF5  
+                  status 000FD8          __initialization 0D20             __end_of_main 0C90  
+                 ??_main 0008            __activetblptr 000002                   _SPBRGH 000FB0  
+       __end_of_readUART 0D20                   isa$std 000001         __end_of_sendUART 0D04  
+           __mediumconst 0000                   tblptrh 000FF7                   tblptrl 000FF6  
+                 tblptru 000FF8               __accesstop 0060  __end_of__initialization 0D20  
+          ___rparam_used 000001           __pcstackCOMRAM 0001           main@dataOutput 000E  
+     __size_of_setupUART 03A0       __size_of_printUART 0056                ?_readUART 0001  
+              ?_sendUART 0001                  __Hparam 0000                  __Lparam 0000  
+           __psmallconst 0800                  __pcinit 0D20                  __ramtop 0800  
+                __ptext0 0C02                  __ptext1 0862                  __ptext2 0D04  
+                __ptext3 0C90                  __ptext4 0CE6     end_of_initialization 0D20  
+             ??_readUART 0001            __Lmediumconst 0000               ??_sendUART 0001  
+      __end_of_setupUART 0C02        __end_of_printUART 0CE6                _RCSTAbits 000FAB  
+              _PORTCbits 000F82                _TRISCbits 000F94                _TXSTAbits 000FAC  
+            _BAUDCONbits 000FB8      start_initialization 0D20             sendUART@data 0001  
+      __size_of_readUART 001C        __size_of_sendUART 001E              __smallconst 0800  
+               _PIR1bits 000F9E                _setupUART 0862                _printUART 0C90  
+               __Hrparam 0000                 __Lrparam 0000               ?_setupUART 0001  
+             ?_printUART 0002          printUART@string 0002                 _readUART 0D04  
+          __size_of_main 008E                 _sendUART 0CE6                 isa$xinst 000000  
+         printUART@index 0006     readUART@receiverData 0001              ??_setupUART 0002  
+            ??_printUART 0004            setupUART@freq 0004        setupUART@BaudRate 0001  

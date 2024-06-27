@@ -1,0 +1,1890 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"3858 /Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3858:     struct {
+[s S154 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S154 . TRISC0 TRISC1 TRISC2 . TRISC6 TRISC7 ]
+"3866
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3866:     struct {
+[s S155 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S155 . RC0 RC1 RC2 . RC6 RC7 ]
+"3857
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3857: typedef union {
+[u S153 `S154 1 `S155 1 ]
+[n S153 . . . ]
+"3875
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3875: extern volatile TRISCbits_t TRISCbits __attribute__((address(0xF94)));
+[v _TRISCbits `VS153 ~T0 @X0 0 e@3988 ]
+"5157
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5157:     struct {
+[s S210 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S210 . TX9D TRMT BRGH SENDB SYNC TXEN TX9 CSRC ]
+"5167
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5167:     struct {
+[s S211 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S211 . TX9D1 TRMT1 BRGH1 SENDB1 SYNC1 TXEN1 TX91 CSRC1 ]
+"5177
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5177:     struct {
+[s S212 :6 `uc 1 :1 `uc 1 ]
+[n S212 . . TX8_9 ]
+"5181
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5181:     struct {
+[s S213 :1 `uc 1 ]
+[n S213 . TXD8 ]
+"5156
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5156: typedef union {
+[u S209 `S210 1 `S211 1 `S212 1 `S213 1 ]
+[n S209 . . . . . ]
+"5185
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5185: extern volatile TXSTAbits_t TXSTAbits __attribute__((address(0xFAC)));
+[v _TXSTAbits `VS209 ~T0 @X0 0 e@4012 ]
+"4947
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4947:     struct {
+[s S196 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S196 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
+"4957
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4957:     struct {
+[s S197 :3 `uc 1 :1 `uc 1 ]
+[n S197 . . ADEN ]
+"4961
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4961:     struct {
+[s S198 :5 `uc 1 :1 `uc 1 ]
+[n S198 . . SRENA ]
+"4965
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4965:     struct {
+[s S199 :6 `uc 1 :1 `uc 1 ]
+[n S199 . . RC8_9 ]
+"4969
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4969:     struct {
+[s S200 :6 `uc 1 :1 `uc 1 ]
+[n S200 . . RC9 ]
+"4973
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4973:     struct {
+[s S201 :1 `uc 1 ]
+[n S201 . RCD8 ]
+"4946
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4946: typedef union {
+[u S195 `S196 1 `S197 1 `S198 1 `S199 1 `S200 1 `S201 1 ]
+[n S195 . . . . . . . ]
+"4977
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4977: extern volatile RCSTAbits_t RCSTAbits __attribute__((address(0xFAB)));
+[v _RCSTAbits `VS195 ~T0 @X0 0 e@4011 ]
+"6073
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6073:     struct {
+[s S247 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S247 . ABDEN WUE . BRG16 TXCKP RXDTP RCIDL ABDOVF ]
+"6083
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6083:     struct {
+[s S248 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S248 . . SCKP . RCMT ]
+"6089
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6089:     struct {
+[s S249 :5 `uc 1 :1 `uc 1 ]
+[n S249 . . RXCKP ]
+"6093
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6093:     struct {
+[s S250 :1 `uc 1 :1 `uc 1 ]
+[n S250 . . W4E ]
+"6072
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6072: typedef union {
+[u S246 `S247 1 `S248 1 `S249 1 `S250 1 ]
+[n S246 . . . . . ]
+"6098
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6098: extern volatile BAUDCONbits_t BAUDCONbits __attribute__((address(0xFB8)));
+[v _BAUDCONbits `VS246 ~T0 @X0 0 e@4024 ]
+"5438
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5438: extern volatile unsigned char SPBRGH __attribute__((address(0xFB0)));
+[v _SPBRGH `Vuc ~T0 @X0 0 e@4016 ]
+"5426
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5426: extern volatile unsigned char SPBRG __attribute__((address(0xFAF)));
+[v _SPBRG `Vuc ~T0 @X0 0 e@4015 ]
+"5402
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5402: extern volatile unsigned char TXREG __attribute__((address(0xFAD)));
+[v _TXREG `Vuc ~T0 @X0 0 e@4013 ]
+"113 /Applications/microchip/xc8/v2.32/pic/include/c99/stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"4474 /Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4474:     struct {
+[s S178 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S178 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF SPPIF ]
+"4484
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4484:     struct {
+[s S179 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S179 . . TX1IF RC1IF . PSPIF ]
+"4473
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4473: typedef union {
+[u S177 `S178 1 `S179 1 ]
+[n S177 . . . ]
+"4492
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4492: extern volatile PIR1bits_t PIR1bits __attribute__((address(0xF9E)));
+[v _PIR1bits `VS177 ~T0 @X0 0 e@3998 ]
+"5414
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5414: extern volatile unsigned char RCREG __attribute__((address(0xFAE)));
+[v _RCREG `Vuc ~T0 @X0 0 e@4014 ]
+"54 /Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 54: __asm("SPPDATA equ 0F62h");
+[; <" SPPDATA equ 0F62h ;# ">
+"74
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 74: __asm("SPPCFG equ 0F63h");
+[; <" SPPCFG equ 0F63h ;# ">
+"151
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 151: __asm("SPPEPS equ 0F64h");
+[; <" SPPEPS equ 0F64h ;# ">
+"225
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 225: __asm("SPPCON equ 0F65h");
+[; <" SPPCON equ 0F65h ;# ">
+"251
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 251: __asm("UFRM equ 0F66h");
+[; <" UFRM equ 0F66h ;# ">
+"258
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 258: __asm("UFRML equ 0F66h");
+[; <" UFRML equ 0F66h ;# ">
+"336
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 336: __asm("UFRMH equ 0F67h");
+[; <" UFRMH equ 0F67h ;# ">
+"376
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 376: __asm("UIR equ 0F68h");
+[; <" UIR equ 0F68h ;# ">
+"432
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 432: __asm("UIE equ 0F69h");
+[; <" UIE equ 0F69h ;# ">
+"488
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 488: __asm("UEIR equ 0F6Ah");
+[; <" UEIR equ 0F6Ah ;# ">
+"539
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 539: __asm("UEIE equ 0F6Bh");
+[; <" UEIE equ 0F6Bh ;# ">
+"590
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 590: __asm("USTAT equ 0F6Ch");
+[; <" USTAT equ 0F6Ch ;# ">
+"650
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 650: __asm("UCON equ 0F6Dh");
+[; <" UCON equ 0F6Dh ;# ">
+"701
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 701: __asm("UADDR equ 0F6Eh");
+[; <" UADDR equ 0F6Eh ;# ">
+"765
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 765: __asm("UCFG equ 0F6Fh");
+[; <" UCFG equ 0F6Fh ;# ">
+"844
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 844: __asm("UEP0 equ 0F70h");
+[; <" UEP0 equ 0F70h ;# ">
+"952
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 952: __asm("UEP1 equ 0F71h");
+[; <" UEP1 equ 0F71h ;# ">
+"1060
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1060: __asm("UEP2 equ 0F72h");
+[; <" UEP2 equ 0F72h ;# ">
+"1168
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1168: __asm("UEP3 equ 0F73h");
+[; <" UEP3 equ 0F73h ;# ">
+"1276
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1276: __asm("UEP4 equ 0F74h");
+[; <" UEP4 equ 0F74h ;# ">
+"1384
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1384: __asm("UEP5 equ 0F75h");
+[; <" UEP5 equ 0F75h ;# ">
+"1492
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1492: __asm("UEP6 equ 0F76h");
+[; <" UEP6 equ 0F76h ;# ">
+"1600
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1600: __asm("UEP7 equ 0F77h");
+[; <" UEP7 equ 0F77h ;# ">
+"1708
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1708: __asm("UEP8 equ 0F78h");
+[; <" UEP8 equ 0F78h ;# ">
+"1784
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1784: __asm("UEP9 equ 0F79h");
+[; <" UEP9 equ 0F79h ;# ">
+"1860
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1860: __asm("UEP10 equ 0F7Ah");
+[; <" UEP10 equ 0F7Ah ;# ">
+"1936
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 1936: __asm("UEP11 equ 0F7Bh");
+[; <" UEP11 equ 0F7Bh ;# ">
+"2012
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2012: __asm("UEP12 equ 0F7Ch");
+[; <" UEP12 equ 0F7Ch ;# ">
+"2088
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2088: __asm("UEP13 equ 0F7Dh");
+[; <" UEP13 equ 0F7Dh ;# ">
+"2164
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2164: __asm("UEP14 equ 0F7Eh");
+[; <" UEP14 equ 0F7Eh ;# ">
+"2240
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2240: __asm("UEP15 equ 0F7Fh");
+[; <" UEP15 equ 0F7Fh ;# ">
+"2316
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2316: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"2455
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2455: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"2565
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2565: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"2707
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2707: __asm("PORTD equ 0F83h");
+[; <" PORTD equ 0F83h ;# ">
+"2828
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2828: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"2975
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 2975: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"3075
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3075: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"3187
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3187: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"3265
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3265: __asm("LATD equ 0F8Ch");
+[; <" LATD equ 0F8Ch ;# ">
+"3377
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3377: __asm("LATE equ 0F8Dh");
+[; <" LATE equ 0F8Dh ;# ">
+"3429
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3429: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"3434
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3434: __asm("DDRA equ 0F92h");
+[; <" DDRA equ 0F92h ;# ">
+"3627
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3627: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"3632
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3632: __asm("DDRB equ 0F93h");
+[; <" DDRB equ 0F93h ;# ">
+"3849
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3849: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"3854
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 3854: __asm("DDRC equ 0F94h");
+[; <" DDRC equ 0F94h ;# ">
+"4003
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4003: __asm("TRISD equ 0F95h");
+[; <" TRISD equ 0F95h ;# ">
+"4008
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4008: __asm("DDRD equ 0F95h");
+[; <" DDRD equ 0F95h ;# ">
+"4225
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4225: __asm("TRISE equ 0F96h");
+[; <" TRISE equ 0F96h ;# ">
+"4230
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4230: __asm("DDRE equ 0F96h");
+[; <" DDRE equ 0F96h ;# ">
+"4327
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4327: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"4386
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4386: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"4470
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4470: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"4554
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4554: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"4638
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4638: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"4709
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4709: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"4780
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4780: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"4851
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4851: __asm("EECON1 equ 0FA6h");
+[; <" EECON1 equ 0FA6h ;# ">
+"4917
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4917: __asm("EECON2 equ 0FA7h");
+[; <" EECON2 equ 0FA7h ;# ">
+"4924
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4924: __asm("EEDATA equ 0FA8h");
+[; <" EEDATA equ 0FA8h ;# ">
+"4931
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4931: __asm("EEADR equ 0FA9h");
+[; <" EEADR equ 0FA9h ;# ">
+"4938
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4938: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"4943
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 4943: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"5148
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5148: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"5153
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5153: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"5404
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5404: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"5409
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5409: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"5416
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5416: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"5421
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5421: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"5428
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5428: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"5433
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5433: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"5440
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5440: __asm("SPBRGH equ 0FB0h");
+[; <" SPBRGH equ 0FB0h ;# ">
+"5447
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5447: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"5568
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5568: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"5575
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5575: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"5582
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5582: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"5589
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5589: __asm("CMCON equ 0FB4h");
+[; <" CMCON equ 0FB4h ;# ">
+"5679
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5679: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"5764
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5764: __asm("ECCP1AS equ 0FB6h");
+[; <" ECCP1AS equ 0FB6h ;# ">
+"5769
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5769: __asm("CCP1AS equ 0FB6h");
+[; <" CCP1AS equ 0FB6h ;# ">
+"5926
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5926: __asm("ECCP1DEL equ 0FB7h");
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"5931
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 5931: __asm("CCP1DEL equ 0FB7h");
+[; <" CCP1DEL equ 0FB7h ;# ">
+"6064
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6064: __asm("BAUDCON equ 0FB8h");
+[; <" BAUDCON equ 0FB8h ;# ">
+"6069
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6069: __asm("BAUDCTL equ 0FB8h");
+[; <" BAUDCTL equ 0FB8h ;# ">
+"6244
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6244: __asm("CCP2CON equ 0FBAh");
+[; <" CCP2CON equ 0FBAh ;# ">
+"6308
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6308: __asm("CCPR2 equ 0FBBh");
+[; <" CCPR2 equ 0FBBh ;# ">
+"6315
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6315: __asm("CCPR2L equ 0FBBh");
+[; <" CCPR2L equ 0FBBh ;# ">
+"6322
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6322: __asm("CCPR2H equ 0FBCh");
+[; <" CCPR2H equ 0FBCh ;# ">
+"6329
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6329: __asm("CCP1CON equ 0FBDh");
+[; <" CCP1CON equ 0FBDh ;# ">
+"6334
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6334: __asm("ECCP1CON equ 0FBDh");
+[; <" ECCP1CON equ 0FBDh ;# ">
+"6491
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6491: __asm("CCPR1 equ 0FBEh");
+[; <" CCPR1 equ 0FBEh ;# ">
+"6498
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6498: __asm("CCPR1L equ 0FBEh");
+[; <" CCPR1L equ 0FBEh ;# ">
+"6505
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6505: __asm("CCPR1H equ 0FBFh");
+[; <" CCPR1H equ 0FBFh ;# ">
+"6512
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6512: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"6583
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6583: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"6668
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6668: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"6787
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6787: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"6794
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6794: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"6801
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6801: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"6808
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6808: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"6870
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6870: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"6940
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 6940: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"7188
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7188: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"7195
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7195: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"7202
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7202: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"7300
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7300: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"7305
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7305: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"7410
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7410: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"7417
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7417: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"7520
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7520: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"7527
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7527: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"7534
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7534: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"7541
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7541: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"7690
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7690: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"7718
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7718: __asm("HLVDCON equ 0FD2h");
+[; <" HLVDCON equ 0FD2h ;# ">
+"7723
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7723: __asm("LVDCON equ 0FD2h");
+[; <" LVDCON equ 0FD2h ;# ">
+"7988
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 7988: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"8071
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8071: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"8141
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8141: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"8148
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8148: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"8155
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8155: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"8162
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8162: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"8233
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8233: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"8240
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8240: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"8247
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8247: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"8254
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8254: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"8261
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8261: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"8268
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8268: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"8275
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8275: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"8282
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8282: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"8289
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8289: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"8296
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8296: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"8303
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8303: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"8310
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8310: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"8317
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8317: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"8324
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8324: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"8331
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8331: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"8338
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8338: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"8345
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8345: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"8352
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8352: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"8359
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8359: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"8366
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8366: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"8373
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8373: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"8380
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8380: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"8387
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8387: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"8394
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8394: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"8401
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8401: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"8408
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8408: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"8415
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8415: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"8507
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8507: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"8584
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8584: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"8701
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8701: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"8708
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8708: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"8715
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8715: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"8722
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8722: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"8731
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8731: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"8738
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8738: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"8745
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8745: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"8752
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8752: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"8761
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8761: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"8768
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8768: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"8775
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8775: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"8782
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8782: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"8789
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8789: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"8796
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8796: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"8872
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8872: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"8879
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8879: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"8886
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8886: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"8893
+[; ;/Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h: 8893: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"13 ../Peripherals/EUSART/EUSART18f4550.c
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 13: void setupUART(unsigned char freq, unsigned char BaudRate){
+[v _setupUART `(v ~T0 @X0 1 ef2`uc`uc ]
+{
+[e :U _setupUART ]
+[v _freq `uc ~T0 @X0 1 r1 ]
+[v _BaudRate `uc ~T0 @X0 1 r2 ]
+[f ]
+"14
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 14:     TRISCbits.RC7 = 1;
+[e = . . _TRISCbits 1 5 -> -> 1 `i `uc ]
+"15
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 15:     TRISCbits.RC6 = 0;
+[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
+"17
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 17:     TXSTAbits.TX9 = 0;
+[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
+"18
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 18:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"19
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 19:     TXSTAbits.SENDB = 0;
+[e = . . _TXSTAbits 0 3 -> -> 0 `i `uc ]
+"20
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 20:     TXSTAbits.TRMT = 1;
+[e = . . _TXSTAbits 0 1 -> -> 1 `i `uc ]
+"23
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 23:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"24
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 24:     RCSTAbits.RX9 = 0;
+[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+"25
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 25:     RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"26
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 26:     RCSTAbits.ADDEN = 0;
+[e = . . _RCSTAbits 0 3 -> -> 0 `i `uc ]
+"27
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 27:     RCSTAbits.FERR = 0;
+[e = . . _RCSTAbits 0 2 -> -> 0 `i `uc ]
+"28
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 28:     RCSTAbits.OERR = 0;
+[e = . . _RCSTAbits 0 1 -> -> 0 `i `uc ]
+"30
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 30:     switch(freq){
+[e $U 371  ]
+{
+"31
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 31:         case 0U:
+[e :U 372 ]
+"32
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 32:             switch(BaudRate){
+[e $U 374  ]
+{
+"33
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 33:                 case 0U:
+[e :U 375 ]
+"35
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 35:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"36
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 36:                     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"37
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 37:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"38
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 38:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"39
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 39:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"40
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 40:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"41
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 41:                     break;
+[e $U 373  ]
+"42
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 42:                 case 1U:
+[e :U 376 ]
+"44
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 44:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"45
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 45:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"46
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 46:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"47
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 47:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"48
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 48:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"49
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 49:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"50
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 50:                     break;
+[e $U 373  ]
+"51
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 51:                 case 2U:
+[e :U 377 ]
+"53
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 53:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"54
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 54:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"55
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 55:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"56
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 56:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"57
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 57:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"58
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 58:                     SPBRG = 12;
+[e = _SPBRG -> -> 12 `i `uc ]
+"59
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 59:                     break;
+[e $U 373  ]
+"60
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 60:                 case 3U:
+[e :U 378 ]
+"62
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 62:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"63
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 63:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"64
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 64:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"65
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 65:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"66
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 66:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"67
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 67:                     SPBRG = 16;
+[e = _SPBRG -> -> 16 `i `uc ]
+"68
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 68:                     break;
+[e $U 373  ]
+"69
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 69:                 case 4U:
+[e :U 379 ]
+"71
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 71:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"72
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 72:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"73
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 73:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"74
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 74:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"75
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 75:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"76
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 76:                     SPBRG = 8;
+[e = _SPBRG -> -> 8 `i `uc ]
+"77
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 77:                     break;
+[e $U 373  ]
+"78
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 78:                 default:
+[e :U 380 ]
+"80
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 80:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"81
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 81:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"82
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 82:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"83
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 83:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"84
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 84:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"85
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 85:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"86
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 86:                     break;
+[e $U 373  ]
+"87
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 87:             }
+}
+[e $U 373  ]
+[e :U 374 ]
+[e [\ -> _BaudRate `i , $ -> -> 0 `ui `i 375
+ , $ -> -> 1 `ui `i 376
+ , $ -> -> 2 `ui `i 377
+ , $ -> -> 3 `ui `i 378
+ , $ -> -> 4 `ui `i 379
+ 380 ]
+[e :U 373 ]
+"88
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 88:             break;
+[e $U 370  ]
+"89
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 89:         case 1U:
+[e :U 381 ]
+"90
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 90:             switch(BaudRate){
+[e $U 383  ]
+{
+"91
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 91:                 case 0U:
+[e :U 384 ]
+"93
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 93:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"94
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 94:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"95
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 95:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"96
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 96:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"97
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 97:                     SPBRGH = 0x03;
+[e = _SPBRGH -> -> 3 `i `uc ]
+"98
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 98:                     SPBRG = 0x40;
+[e = _SPBRG -> -> 64 `i `uc ]
+"99
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 99:                     break;
+[e $U 382  ]
+"100
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 100:                 case 1U:
+[e :U 385 ]
+"102
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 102:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"103
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 103:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"104
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 104:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"105
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 105:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"106
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 106:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"107
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 107:                     SPBRG = 51;
+[e = _SPBRG -> -> 51 `i `uc ]
+"108
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 108:                     break;
+[e $U 382  ]
+"109
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 109:                 case 2U:
+[e :U 386 ]
+"111
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 111:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"112
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 112:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"113
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 113:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"114
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 114:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"115
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 115:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"116
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 116:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"117
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 117:                     break;
+[e $U 382  ]
+"118
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 118:                 case 3U:
+[e :U 387 ]
+"120
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 120:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"121
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 121:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"122
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 122:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"123
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 123:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"124
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 124:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"125
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 125:                     SPBRG = 34;
+[e = _SPBRG -> -> 34 `i `uc ]
+"126
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 126:                     break;
+[e $U 382  ]
+"127
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 127:                 case 4U:
+[e :U 388 ]
+"129
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 129:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"130
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 130:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"131
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 131:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"132
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 132:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"133
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 133:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"134
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 134:                     SPBRG = 34;
+[e = _SPBRG -> -> 34 `i `uc ]
+"135
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 135:                     break;
+[e $U 382  ]
+"136
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 136:                 default:
+[e :U 389 ]
+"138
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 138:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"139
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 139:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"140
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 140:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"141
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 141:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"142
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 142:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"143
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 143:                     SPBRG = 51;
+[e = _SPBRG -> -> 51 `i `uc ]
+"144
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 144:                     break;
+[e $U 382  ]
+"145
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 145:             }
+}
+[e $U 382  ]
+[e :U 383 ]
+[e [\ -> _BaudRate `i , $ -> -> 0 `ui `i 384
+ , $ -> -> 1 `ui `i 385
+ , $ -> -> 2 `ui `i 386
+ , $ -> -> 3 `ui `i 387
+ , $ -> -> 4 `ui `i 388
+ 389 ]
+[e :U 382 ]
+"146
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 146:             break;
+[e $U 370  ]
+"147
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 147:         case 2U:
+[e :U 390 ]
+"148
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 148:             switch(BaudRate){
+[e $U 392  ]
+{
+"149
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 149:                 case 0U:
+[e :U 393 ]
+"151
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 151:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"152
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 152:                     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"153
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 153:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"154
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 154:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"155
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 155:                     SPBRGH = 0x01;
+[e = _SPBRGH -> -> 1 `i `uc ]
+"156
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 156:                     SPBRG = 0x03;
+[e = _SPBRG -> -> 3 `i `uc ]
+"157
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 157:                     break;
+[e $U 391  ]
+"158
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 158:                 case 1U:
+[e :U 394 ]
+"160
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 160:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"161
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 161:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"162
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 162:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"163
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 163:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"164
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 164:                     SPBRGH = 0x02;
+[e = _SPBRGH -> -> 2 `i `uc ]
+"165
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 165:                     SPBRG = 0x08;
+[e = _SPBRG -> -> 8 `i `uc ]
+"166
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 166:                     break;
+[e $U 391  ]
+"167
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 167:                 case 2U:
+[e :U 395 ]
+"169
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 169:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"170
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 170:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"171
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 171:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"172
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 172:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"173
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 173:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"174
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 174:                     SPBRG = 64;
+[e = _SPBRG -> -> 64 `i `uc ]
+"175
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 175:                     break;
+[e $U 391  ]
+"176
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 176:                 case 3U:
+[e :U 396 ]
+"178
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 178:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"179
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 179:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"180
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 180:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"181
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 181:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"182
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 182:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"183
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 183:                     SPBRG = 86;
+[e = _SPBRG -> -> 86 `i `uc ]
+"184
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 184:                     break;
+[e $U 391  ]
+"185
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 185:                 case 4U:
+[e :U 397 ]
+"187
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 187:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"188
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 188:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"189
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 189:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"190
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 190:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"191
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 191:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"192
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 192:                     SPBRG = 42;
+[e = _SPBRG -> -> 42 `i `uc ]
+"193
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 193:                     break;
+[e $U 391  ]
+"194
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 194:                 default:
+[e :U 398 ]
+"196
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 196:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"197
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 197:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"198
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 198:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"199
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 199:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"200
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 200:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"201
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 201:                     SPBRG = 51;
+[e = _SPBRG -> -> 51 `i `uc ]
+"202
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 202:                     break;
+[e $U 391  ]
+"203
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 203:             }
+}
+[e $U 391  ]
+[e :U 392 ]
+[e [\ -> _BaudRate `i , $ -> -> 0 `ui `i 393
+ , $ -> -> 1 `ui `i 394
+ , $ -> -> 2 `ui `i 395
+ , $ -> -> 3 `ui `i 396
+ , $ -> -> 4 `ui `i 397
+ 398 ]
+[e :U 391 ]
+"204
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 204:             break;
+[e $U 370  ]
+"205
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 205:         case 3U:
+[e :U 399 ]
+"206
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 206:             switch(BaudRate){
+[e $U 401  ]
+{
+"207
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 207:                 case 0U:
+[e :U 402 ]
+"209
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 209:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"210
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 210:                     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"211
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 211:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"212
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 212:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"213
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 213:                     SPBRGH = 0x04;
+[e = _SPBRGH -> -> 4 `i `uc ]
+"214
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 214:                     SPBRG = 0x10;
+[e = _SPBRG -> -> 16 `i `uc ]
+"215
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 215:                     break;
+[e $U 400  ]
+"216
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 216:                 case 1U:
+[e :U 403 ]
+"218
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 218:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"219
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 219:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"220
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 220:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"221
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 221:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"222
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 222:                     SPBRGH = 0x04;
+[e = _SPBRGH -> -> 4 `i `uc ]
+"223
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 223:                     SPBRG = 0x10;
+[e = _SPBRG -> -> 16 `i `uc ]
+"224
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 224:                     break;
+[e $U 400  ]
+"225
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 225:                 case 2U:
+[e :U 404 ]
+"227
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 227:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"228
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 228:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"229
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 229:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"230
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 230:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"231
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 231:                     SPBRGH = 0x02;
+[e = _SPBRGH -> -> 2 `i `uc ]
+"232
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 232:                     SPBRG = 0x08;
+[e = _SPBRG -> -> 8 `i `uc ]
+"233
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 233:                     break;
+[e $U 400  ]
+"234
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 234:                 case 3U:
+[e :U 405 ]
+"236
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 236:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"237
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 237:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"238
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 238:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"239
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 239:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"240
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 240:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"241
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 241:                     SPBRG = 172;
+[e = _SPBRG -> -> 172 `i `uc ]
+"242
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 242:                     break;
+[e $U 400  ]
+"243
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 243:                 case 4U:
+[e :U 406 ]
+"245
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 245:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"246
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 246:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"247
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 247:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"248
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 248:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"249
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 249:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"250
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 250:                     SPBRG = 42;
+[e = _SPBRG -> -> 42 `i `uc ]
+"251
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 251:                     break;
+[e $U 400  ]
+"252
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 252:                 default:
+[e :U 407 ]
+"254
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 254:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"255
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 255:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"256
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 256:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"257
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 257:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"258
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 258:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"259
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 259:                     SPBRG = 86;
+[e = _SPBRG -> -> 86 `i `uc ]
+"260
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 260:                     break;
+[e $U 400  ]
+"261
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 261:             }
+}
+[e $U 400  ]
+[e :U 401 ]
+[e [\ -> _BaudRate `i , $ -> -> 0 `ui `i 402
+ , $ -> -> 1 `ui `i 403
+ , $ -> -> 2 `ui `i 404
+ , $ -> -> 3 `ui `i 405
+ , $ -> -> 4 `ui `i 406
+ 407 ]
+[e :U 400 ]
+"262
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 262:             break;
+[e $U 370  ]
+"263
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 263:         default:
+[e :U 408 ]
+"264
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 264:             switch(BaudRate){
+[e $U 410  ]
+{
+"265
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 265:                 case 0U:
+[e :U 411 ]
+"267
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 267:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"268
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 268:                     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"269
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 269:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"270
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 270:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"271
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 271:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"272
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 272:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"273
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 273:                     break;
+[e $U 409  ]
+"274
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 274:                 case 1U:
+[e :U 412 ]
+"276
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 276:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"277
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 277:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"278
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 278:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"279
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 279:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"280
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 280:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"281
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 281:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"282
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 282:                     break;
+[e $U 409  ]
+"283
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 283:                 case 2U:
+[e :U 413 ]
+"285
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 285:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"286
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 286:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"287
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 287:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"288
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 288:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"289
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 289:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"290
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 290:                     SPBRG = 12;
+[e = _SPBRG -> -> 12 `i `uc ]
+"291
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 291:                     break;
+[e $U 409  ]
+"292
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 292:                 case 3U:
+[e :U 414 ]
+"294
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 294:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"295
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 295:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"296
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 296:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"297
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 297:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"298
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 298:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"299
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 299:                     SPBRG = 16;
+[e = _SPBRG -> -> 16 `i `uc ]
+"300
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 300:                     break;
+[e $U 409  ]
+"301
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 301:                 case 4U:
+[e :U 415 ]
+"303
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 303:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"304
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 304:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"305
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 305:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"306
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 306:                     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"307
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 307:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"308
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 308:                     SPBRG = 8;
+[e = _SPBRG -> -> 8 `i `uc ]
+"309
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 309:                     break;
+[e $U 409  ]
+"310
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 310:                 default:
+[e :U 416 ]
+"312
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 312:                     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"313
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 313:                     TXSTAbits.BRGH = 1;
+[e = . . _TXSTAbits 0 2 -> -> 1 `i `uc ]
+"314
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 314:                     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"315
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 315:                     BAUDCONbits.BRG16 = 0;
+[e = . . _BAUDCONbits 0 3 -> -> 0 `i `uc ]
+"316
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 316:                     SPBRGH = 0;
+[e = _SPBRGH -> -> 0 `i `uc ]
+"317
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 317:                     SPBRG = 25;
+[e = _SPBRG -> -> 25 `i `uc ]
+"318
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 318:                     break;
+[e $U 409  ]
+"319
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 319:             }
+}
+[e $U 409  ]
+[e :U 410 ]
+[e [\ -> _BaudRate `i , $ -> -> 0 `ui `i 411
+ , $ -> -> 1 `ui `i 412
+ , $ -> -> 2 `ui `i 413
+ , $ -> -> 3 `ui `i 414
+ , $ -> -> 4 `ui `i 415
+ 416 ]
+[e :U 409 ]
+"320
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 320:             break;
+[e $U 370  ]
+"321
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 321:     }
+}
+[e $U 370  ]
+[e :U 371 ]
+[e [\ -> _freq `i , $ -> -> 0 `ui `i 372
+ , $ -> -> 1 `ui `i 381
+ , $ -> -> 2 `ui `i 390
+ , $ -> -> 3 `ui `i 399
+ 408 ]
+[e :U 370 ]
+"322
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 322:     TRISCbits.RC7 = 1;
+[e = . . _TRISCbits 1 5 -> -> 1 `i `uc ]
+"323
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 323:     TRISCbits.RC6 = 0;
+[e = . . _TRISCbits 1 4 -> -> 0 `i `uc ]
+"326
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 326:     TXSTAbits.TX9 = 0;
+[e = . . _TXSTAbits 0 6 -> -> 0 `i `uc ]
+"327
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 327:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"328
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 328:     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"329
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 329:     TXSTAbits.SENDB = 0;
+[e = . . _TXSTAbits 0 3 -> -> 0 `i `uc ]
+"330
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 330:     TXSTAbits.BRGH = 0;
+[e = . . _TXSTAbits 0 2 -> -> 0 `i `uc ]
+"331
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 331:     TXSTAbits.TRMT = 1;
+[e = . . _TXSTAbits 0 1 -> -> 1 `i `uc ]
+"333
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 333:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"334
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 334:     RCSTAbits.RX9 = 0;
+[e = . . _RCSTAbits 0 6 -> -> 0 `i `uc ]
+"335
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 335:     RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"336
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 336:     RCSTAbits.ADDEN = 0;
+[e = . . _RCSTAbits 0 3 -> -> 0 `i `uc ]
+"337
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 337:     RCSTAbits.FERR = 0;
+[e = . . _RCSTAbits 0 2 -> -> 0 `i `uc ]
+"338
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 338:     RCSTAbits.OERR = 0;
+[e = . . _RCSTAbits 0 1 -> -> 0 `i `uc ]
+"340
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 340:     BAUDCONbits.ABDOVF = 0;
+[e = . . _BAUDCONbits 0 7 -> -> 0 `i `uc ]
+"341
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 341:     BAUDCONbits.BRG16 = 1;
+[e = . . _BAUDCONbits 0 3 -> -> 1 `i `uc ]
+"342
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 342:     SPBRG = 10;
+[e = _SPBRG -> -> 10 `i `uc ]
+"344
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 344: }
+[e :UE 369 ]
+}
+"345
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 345: void sendUART(unsigned char data){
+[v _sendUART `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _sendUART ]
+[v _data `uc ~T0 @X0 1 r1 ]
+[f ]
+"347
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 347:     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"348
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 348:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"349
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 349:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"351
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 351:     TXSTAbits.TXEN = 1;
+[e = . . _TXSTAbits 0 5 -> -> 1 `i `uc ]
+"352
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 352:     while(!TXSTAbits.TRMT);
+[e $U 418  ]
+[e :U 419 ]
+[e :U 418 ]
+[e $ ! != -> . . _TXSTAbits 0 1 `i -> 0 `i 419  ]
+[e :U 420 ]
+"353
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 353:     TXREG = data;
+[e = _TXREG _data ]
+"354
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 354: }
+[e :UE 417 ]
+}
+"356
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 356: void printUART(char *string){
+[v _printUART `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _printUART ]
+[v _string `*uc ~T0 @X0 1 r1 ]
+[f ]
+"357
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 357:     unsigned int index = 0;
+[v _index `ui ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `ui ]
+"358
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 358:     while(string[index] != 0x00){
+[e $U 422  ]
+[e :U 423 ]
+{
+"359
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 359:         sendUART(string[index]);
+[e ( _sendUART (1 -> *U + _string * -> _index `ux -> -> # *U _string `ui `ux `uc ]
+"360
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 360:         ++index;
+[e =+ _index -> -> 1 `i `ui ]
+"361
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 361:     }
+}
+[e :U 422 ]
+"358
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 358:     while(string[index] != 0x00){
+[e $ != -> *U + _string * -> _index `ux -> -> # *U _string `ui `ux `i -> 0 `i 423  ]
+[e :U 424 ]
+"362
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 362: }
+[e :UE 421 ]
+}
+"363
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 363: void printUARTLn(char *string){
+[v _printUARTLn `(v ~T0 @X0 1 ef1`*uc ]
+{
+[e :U _printUARTLn ]
+[v _string `*uc ~T0 @X0 1 r1 ]
+[f ]
+"364
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 364:     unsigned int index = 0;
+[v _index `ui ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `ui ]
+"365
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 365:     while(string[index] != 0x00){
+[e $U 426  ]
+[e :U 427 ]
+{
+"366
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 366:         sendUART(string[index]);
+[e ( _sendUART (1 -> *U + _string * -> _index `ux -> -> # *U _string `ui `ux `uc ]
+"367
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 367:         ++index;
+[e =+ _index -> -> 1 `i `ui ]
+"368
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 368:     }
+}
+[e :U 426 ]
+"365
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 365:     while(string[index] != 0x00){
+[e $ != -> *U + _string * -> _index `ux -> -> # *U _string `ui `ux `i -> 0 `i 427  ]
+[e :U 428 ]
+"369
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 369:     sendUART("\n");
+[e ( _sendUART (1 -> :s 1C `uc ]
+"370
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 370: }
+[e :UE 425 ]
+}
+"371
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 371: void printUARTInt(int data){
+[v _printUARTInt `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _printUARTInt ]
+[v _data `i ~T0 @X0 1 r1 ]
+[f ]
+"372
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 372:     char string[15];
+[v _string `uc ~T0 @X0 -> 15 `i a ]
+"373
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 373:     sprintf(string, "%d", data);
+[e ( _sprintf (1 , (. , &U _string :s 2C _data ]
+"374
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 374:     unsigned int index = 0;
+[v _index `ui ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `ui ]
+"375
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 375:     while(string[index] != 0x00){
+[e $U 430  ]
+[e :U 431 ]
+{
+"376
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 376:         sendUART(string[index]);
+[e ( _sendUART (1 -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `uc ]
+"377
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 377:         ++index;
+[e =+ _index -> -> 1 `i `ui ]
+"378
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 378:     }
+}
+[e :U 430 ]
+"375
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 375:     while(string[index] != 0x00){
+[e $ != -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `i -> 0 `i 431  ]
+[e :U 432 ]
+"379
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 379: }
+[e :UE 429 ]
+}
+"380
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 380: void printUARTIntLn(int data){
+[v _printUARTIntLn `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _printUARTIntLn ]
+[v _data `i ~T0 @X0 1 r1 ]
+[f ]
+"381
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 381:     char string[15];
+[v _string `uc ~T0 @X0 -> 15 `i a ]
+"382
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 382:     sprintf(string, "%d", data);
+[e ( _sprintf (1 , (. , &U _string :s 3C _data ]
+"383
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 383:     unsigned int index = 0;
+[v _index `ui ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `ui ]
+"384
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 384:     while(string[index] != 0x00){
+[e $U 434  ]
+[e :U 435 ]
+{
+"385
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 385:         sendUART(string[index]);
+[e ( _sendUART (1 -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `uc ]
+"386
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 386:         ++index;
+[e =+ _index -> -> 1 `i `ui ]
+"387
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 387:     }
+}
+[e :U 434 ]
+"384
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 384:     while(string[index] != 0x00){
+[e $ != -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `i -> 0 `i 435  ]
+[e :U 436 ]
+"389
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 389:     sendUART("\n");
+[e ( _sendUART (1 -> :s 4C `uc ]
+"390
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 390: }
+[e :UE 433 ]
+}
+"392
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 392: void printUARTFloat(float data){
+[v _printUARTFloat `(v ~T0 @X0 1 ef1`f ]
+{
+[e :U _printUARTFloat ]
+[v _data `f ~T0 @X0 1 r1 ]
+[f ]
+"393
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 393:     char string[20];
+[v _string `uc ~T0 @X0 -> 20 `i a ]
+"394
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 394:     sprintf(string, "%f", data);
+[e ( _sprintf (1 , (. , &U _string :s 5C -> _data `d ]
+"395
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 395:     unsigned int index = 0;
+[v _index `ui ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `ui ]
+"396
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 396:     while(string[index] != 0x00){
+[e $U 438  ]
+[e :U 439 ]
+{
+"397
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 397:         sendUART(string[index]);
+[e ( _sendUART (1 -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `uc ]
+"398
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 398:         ++index;
+[e =+ _index -> -> 1 `i `ui ]
+"399
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 399:     }
+}
+[e :U 438 ]
+"396
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 396:     while(string[index] != 0x00){
+[e $ != -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `i -> 0 `i 439  ]
+[e :U 440 ]
+"400
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 400: }
+[e :UE 437 ]
+}
+"401
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 401: void printUARTFloatLn(float data){
+[v _printUARTFloatLn `(v ~T0 @X0 1 ef1`f ]
+{
+[e :U _printUARTFloatLn ]
+[v _data `f ~T0 @X0 1 r1 ]
+[f ]
+"402
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 402:     char string[20];
+[v _string `uc ~T0 @X0 -> 20 `i a ]
+"403
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 403:     sprintf(string, "%f", data);
+[e ( _sprintf (1 , (. , &U _string :s 6C -> _data `d ]
+"404
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 404:     unsigned int index = 0;
+[v _index `ui ~T0 @X0 1 a ]
+[e = _index -> -> 0 `i `ui ]
+"405
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 405:     while(string[index] != 0x00){
+[e $U 442  ]
+[e :U 443 ]
+{
+"406
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 406:         sendUART(string[index]);
+[e ( _sendUART (1 -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `uc ]
+"407
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 407:         ++index;
+[e =+ _index -> -> 1 `i `ui ]
+"408
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 408:     }
+}
+[e :U 442 ]
+"405
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 405:     while(string[index] != 0x00){
+[e $ != -> *U + &U _string * -> _index `ux -> -> # *U &U _string `ui `ux `i -> 0 `i 443  ]
+[e :U 444 ]
+"410
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 410:     sendUART("\n");
+[e ( _sendUART (1 -> :s 7C `uc ]
+"411
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 411: }
+[e :UE 441 ]
+}
+"413
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 413: unsigned char readUART(){
+[v _readUART `(uc ~T0 @X0 1 ef ]
+{
+[e :U _readUART ]
+[f ]
+"414
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 414:     unsigned char receiverData;
+[v _receiverData `uc ~T0 @X0 1 a ]
+"415
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 415:     TXSTAbits.SYNC=0;
+[e = . . _TXSTAbits 0 4 -> -> 0 `i `uc ]
+"416
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 416:     RCSTAbits.SPEN = 1;
+[e = . . _RCSTAbits 0 7 -> -> 1 `i `uc ]
+"417
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 417:     RCSTAbits.CREN = 1;
+[e = . . _RCSTAbits 0 4 -> -> 1 `i `uc ]
+"418
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 418:     while(!PIR1bits.RCIF);
+[e $U 446  ]
+[e :U 447 ]
+[e :U 446 ]
+[e $ ! != -> . . _PIR1bits 0 5 `i -> 0 `i 447  ]
+[e :U 448 ]
+"419
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 419:     receiverData = RCREG;
+[e = _receiverData _RCREG ]
+"420
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 420:     return receiverData;
+[e ) _receiverData ]
+[e $UE 445  ]
+"421
+[; ;../Peripherals/EUSART/EUSART18f4550.c: 421: }
+[e :UE 445 ]
+}
+[p f _sprintf 8396928 ]
+[a 5C 37 102 0 ]
+[a 6C 37 102 0 ]
+[a 2C 37 100 0 ]
+[a 3C 37 100 0 ]
+[a 1C 10 0 ]
+[a 4C 10 0 ]
+[a 7C 10 0 ]

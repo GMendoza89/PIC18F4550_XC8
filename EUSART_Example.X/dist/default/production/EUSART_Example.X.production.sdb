@@ -1,0 +1,255 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F4550 ]
+[d frameptr 4065 ]
+"13 /Users/gustavomendoza/MPLABXProjects/PIC18F4550/Peripherals/EUSART/EUSART18f4550.c
+[v _setupUART setupUART `(v  1 e 1 0 ]
+"345
+[v _sendUART sendUART `(v  1 e 1 0 ]
+"356
+[v _printUART printUART `(v  1 e 1 0 ]
+"413
+[v _readUART readUART `(uc  1 e 1 0 ]
+"4 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"9 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"10 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 /Applications/microchip/xc8/v2.32/pic/sources/c99/common/Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"18 /Users/gustavomendoza/MPLABXProjects/PIC18F4550/EUSART_Example.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"2453 /Users/gustavomendoza/.mchp_packs/Microchip/PIC18Fxxxx_DFP/1.4.151/xc8/pic/include/proc/pic18f4550.h
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+"2563
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+[s S44 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"2605
+[s S53 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S60 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S67 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[s S71 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+]
+[u S74 . 1 `S44 1 . 1 0 `S53 1 . 1 0 `S60 1 . 1 0 `S67 1 . 1 0 `S71 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES74  1 e 1 @3970 ]
+"2705
+[v _PORTD PORTD `VEuc  1 e 1 @3971 ]
+"3073
+[v _LATB LATB `VEuc  1 e 1 @3978 ]
+"3185
+[v _LATC LATC `VEuc  1 e 1 @3979 ]
+"3263
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"3625
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"3847
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S145 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"3875
+[s S152 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S159 . 1 `S145 1 . 1 0 `S152 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES159  1 e 1 @3988 ]
+"4001
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S338 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 SPPIF 1 0 :1:7 
+]
+"4492
+[s S347 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[u S353 . 1 `S338 1 . 1 0 `S347 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES353  1 e 1 @3998 ]
+[s S229 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"4977
+[s S238 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 ADEN 1 0 :1:3 
+]
+[s S241 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[s S244 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S247 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S250 . 1 `uc 1 RCD8 1 0 :1:0 
+]
+[u S252 . 1 `S229 1 . 1 0 `S238 1 . 1 0 `S241 1 . 1 0 `S244 1 . 1 0 `S247 1 . 1 0 `S250 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES252  1 e 1 @4011 ]
+[s S177 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"5185
+[s S186 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S195 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S198 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S200 . 1 `S177 1 . 1 0 `S186 1 . 1 0 `S195 1 . 1 0 `S198 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES200  1 e 1 @4012 ]
+"5402
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"5414
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"5426
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"5438
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S283 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"6098
+[s S292 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S297 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S300 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S303 . 1 `S283 1 . 1 0 `S292 1 . 1 0 `S297 1 . 1 0 `S300 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES303  1 e 1 @4024 ]
+"18 /Users/gustavomendoza/MPLABXProjects/PIC18F4550/EUSART_Example.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"40
+[v main@message1 message1 `*.25uc  1 a 2 11 ]
+"39
+[v main@message0 message0 `*.25uc  1 a 2 9 ]
+"43
+[v main@dataOutput dataOutput `uc  1 a 1 13 ]
+"62
+} 0
+"13 /Users/gustavomendoza/MPLABXProjects/PIC18F4550/Peripherals/EUSART/EUSART18f4550.c
+[v _setupUART setupUART `(v  1 e 1 0 ]
+{
+[v setupUART@freq freq `uc  1 a 1 wreg ]
+[v setupUART@freq freq `uc  1 a 1 wreg ]
+[v setupUART@BaudRate BaudRate `uc  1 p 1 0 ]
+[v setupUART@freq freq `uc  1 a 1 3 ]
+"344
+} 0
+"413
+[v _readUART readUART `(uc  1 e 1 0 ]
+{
+"414
+[v readUART@receiverData receiverData `uc  1 a 1 0 ]
+"421
+} 0
+"356
+[v _printUART printUART `(v  1 e 1 0 ]
+{
+"357
+[v printUART@index index `ui  1 a 2 5 ]
+"356
+[v printUART@string string `*.25uc  1 p 2 1 ]
+"362
+} 0
+"345
+[v _sendUART sendUART `(v  1 e 1 0 ]
+{
+[v sendUART@data data `uc  1 a 1 wreg ]
+[v sendUART@data data `uc  1 a 1 wreg ]
+"347
+[v sendUART@data data `uc  1 a 1 0 ]
+"354
+} 0
